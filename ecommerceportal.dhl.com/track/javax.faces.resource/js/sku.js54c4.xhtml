@@ -1,0 +1,1086 @@
+function toggle() {
+	var bS = document.getElementById('skuLookupForm:cSearch');
+	var advS = document.getElementById('skuLookupForm:advSearchPanel');
+	ent.getElementById('skuLookupForm:sBtn');
+	if (bS.style.display == 'block') {
+		bS.style.display = 'none';
+		advS.style.display = 'block';
+		stBtn.innerHTML = 'Basic Search >>';
+	} else {
+		bS.style.display = 'block';
+		advS.style.display = 'none';
+		stBtn.innerHTML = 'Advanced Search >>';
+		var stBtn = docum
+	}
+}
+
+function clearAllForm(inform) {
+	$("#" + inform).clearForm();
+	return false;
+}
+
+$(document)
+.ready(
+		function() {
+			//Overriding the primefaces select one menu space key function to prevent open/close of dropdown list on click of space
+			PrimeFaces.widget.SelectOneMenu.prototype.handleSpaceKey = function(event) {
+		       return;
+		    }
+			//Overriding the primefaces input text area maxlength function to prevent trimming of chars exceeding maxlength 
+			if (PrimeFaces.widget.InputTextarea) {
+			    PrimeFaces.widget.InputTextarea.prototype.applyMaxlength = function () {
+			    	 return;
+			    };
+			}
+			
+			$("input[type=file]").on("change", function() {
+				 
+			    var max = 1 * 1024 * 1024; // 10MB
+			    if (this.files && this.files[0].size > max) {
+			        alert("File too large. Maximum allowed 1MB"); // Do your thing to handle the error.
+			        this.value = null; // Clears the field.
+			        $('.ui-fileupload-filename').css('display','none');
+			    }else{
+			    	$('.ui-fileupload-filename').css('display','inline');
+			    }
+			});
+			
+			
+			var urlPath = location.pathname;
+			var temp = urlPath.split("/");
+			var pageName = temp[temp.length - 1];
+			
+			if (pageName == "mydashboard.xhtml") {
+				$(".dashboardSelected").addClass("active");
+				$(".dashboardSelected").parent().addClass("active");
+				// changing icon to selected one
+				$("#dashBoardImg")
+				.attr("src",
+				"../../resources/ui-template-0.4/img/portal-icon-dashboard-selected.png");
+			} else if (pageName == "lookupprod-0.2.xhtml"
+				|| pageName == "createProd-0.2.xhtml") {
+				// changing image
+				$("#prodInvImg")
+				.attr("src",
+				"../../resources/ui-template-0.4/img/portal-icon-products-selected.png");
+				// to expand list
+				$("#prodInventory").find('ul').toggle();
+				// highlighting parents (which is side line)
+				$(".selectedItem").parent().parent().parent().addClass(
+				"active");
+				// highlighting siblings
+				$(".selectedItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".prodInventory").addClass("activeParent");
+
+				// highlight the selected item
+				$("#manageProd").removeClass("activeSibling");
+				$("#manageProd").addClass("active");
+			} else if (pageName == "shiporders.xhtml" || pageName == "shiporderview.xhtml" ) {
+				// changing image
+				$("#shipmentImg").attr("src", "../../resources/ui-template-0.4/img/portal-icon-shipments-selected.png");
+				// to expand list
+				$("#shipment").find('ul').toggle();
+				// highlighting parents (which is side line)
+				$(".selectedItem").parent().parent().parent().addClass("active");
+				// highlighting siblings
+				$(".selectedItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".shipment").addClass("activeParent");
+				// highlight the selected item based on the link
+				$("#shipmentOrder").removeClass("activeSibling");
+				$("#shipmentOrder").addClass("active");
+			} else if (pageName == "shipitnow.xhtml" || pageName == "createshipment.xhtml" || pageName == "viewShipment.xhtml" || 
+					pageName=="manifestshipment.xhtml" || pageName=="editshipment.xhtml" || pageName == "bulkShipment.xhtml" || pageName == "reviewPullOrders.xhtml") {
+				// changing image
+				$("#shipmentImg").attr("src", "../../resources/ui-template-0.4/img/portal-icon-shipments-selected.png");
+				// to expand list
+				$("#shipment").find('ul').toggle();
+				// highlighting parents (which is side line)
+				$(".selectedItem").parent().parent().parent().addClass("active");
+				// highlighting siblings
+				$(".selectedItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".shipment").addClass("activeParent");
+				// highlight the selected item based on the link
+				$("#shipItNow").removeClass("activeSibling");
+				$("#shipItNow").addClass("active");
+			}else if (pageName == "shipReports.xhtml") {
+				// changing image
+				$("#shipmentImg").attr("src", "../../resources/ui-template-0.4/img/portal-icon-shipments-selected.png");
+				// to expand list
+				$("#shipment").find('ul').toggle();
+				// highlighting parents (which is side line)
+				$(".selectedItem").parent().parent().parent().addClass("active");
+				// highlighting siblings
+				$(".selectedItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".shipment").addClass("activeParent");
+				// highlight the selected item based on the link
+				$("#shipmentReports").removeClass("activeSibling");
+				$("#shipmentReports").addClass("active");
+			} else if (pageName == "reportsOverview.xhtml" || pageName == "generateShipReports.xhtml") {
+				// changing image
+				$("#shipmentImg").attr("src", "../../resources/ui-template-0.4/img/portal-icon-shipments-selected.png");
+				// to expand list
+				$("#shipment").find('ul').toggle();
+				// highlighting parents (which is side line)
+				$(".selectedItem").parent().parent().parent().addClass("active");
+				// highlighting siblings
+				$(".selectedItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".shipment").addClass("activeParent");
+				// highlight the selected item based on the link
+				$("#reportsOverview").removeClass("activeSibling");
+				$("#reportsOverview").addClass("active");
+			}
+			else if (pageName == "trackItNow.xhtml" || pageName == "shipmentitemtracking.xhtml") {
+				// changing image
+				$("#trackImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-track-selected.png");						
+				// highlight the selected item based on the link						
+				$("#trackItNow").addClass("active");
+			}
+			else if (pageName == "statisticsdashboard.xhtml") {
+				// changing image
+				$("#statDashboardImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-stat-dashboard-selected.png");						
+				// highlight the selected item based on the link						
+				$("#statisticsDashboardPage").addClass("active");
+			}
+			else if (pageName == "manageaccounts.xhtml" || pageName == "createaccount.xhtml" || pageName == "accountdetails.xhtml") {
+				// changing image
+				$("#accountImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-account-selected.png");
+				// to expand list
+				$("#account").find('ul').toggle();
+				// highlighting parents (which is side line)
+				$(".selectedActItem").parent().parent().parent().addClass("active");
+				// highlighting siblings
+				$(".selectedActItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".account").addClass("activeParent");
+				// highlight the selected item based on the link
+				$("#manageact").removeClass("activeSibling");
+				$("#manageact").addClass("active");
+			}
+			 /*RTC-116243 Aishwarya START*/
+			else if (pageName == "manageNewsFeed.xhtml" || pageName == "createnewsfeed.xhtml" ||  pageName == "bulkNewsFeed.xhtml") {
+				// changing image
+				$("#accountImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-account-selected.png");
+				// to expand list
+				$("#account").find('ul').toggle();
+				// highlighting parents (which is side line)
+				$(".selectedActItem").parent().parent().parent().addClass("active");
+				// highlighting siblings
+				$(".selectedActItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".account").addClass("activeParent");
+				// highlight the selected item based on the link
+				$("#manageNewsFeed").removeClass("activeSibling");
+				$("#manageNewsFeed").addClass("active");
+			}
+			 /*RTC-116243 Aishwarya END*/
+
+			//RTC-128094-AISHWARYA-START
+			else if (pageName == "manageBroadCast.xhtml") {
+                // changing image
+                $("#accountImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-account-selected.png");
+                // to expand list
+                $("#account").find('ul').toggle();
+                // highlighting parents (which is side line)
+                $(".selectedActItem").parent().parent().parent().addClass("active");
+                // highlighting siblings
+                $(".selectedActItem").addClass("activeSibling");
+                // highlight parent with different color
+                $(".account").addClass("activeParent");
+                // highlight the selected item based on the link
+                $("#manageBroadCast").removeClass("activeSibling");
+                $("#manageBroadCast").addClass("active");
+          } 
+			else if (pageName == "bulkProductMatrix.xhtml" || pageName == "productMatrixRules.xhtml") {
+                // changing image
+                $("#accountImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-account-selected.png");
+                // to expand list
+                $("#account").find('ul').toggle();
+                // highlighting parents (which is side line)
+                $(".selectedActItem").parent().parent().parent().addClass("active");
+                // highlighting siblings
+                $(".selectedActItem").addClass("activeSibling");
+                // highlight parent with different color
+                $(".account").addClass("activeParent");
+                // highlight the selected item based on the link
+                $("#manageProductMatrix").removeClass("activeSibling");
+                $("#manageProductMatrix").addClass("active");
+          }
+			//RTC-128094-AISHWARYA-END
+			else if(pageName=="manageaccountaccess.xhtml" || pageName=="accountaccessgroup.xhtml"){
+				// changing image
+				$("#accountImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-account-selected.png");
+				// to expand list
+				$("#account").find('ul').toggle();
+				// highlighting parents (which is side line)
+				$(".selectedActItem").parent().parent().parent().addClass("active");
+				// highlighting siblings
+				$(".selectedActItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".account").addClass("activeParent");
+				// highlight the selected item based on the link
+				$("#manageactAccs").removeClass("activeSibling");
+				$("#manageactAccs").addClass("active");
+			}else if(pageName==="marketplaceLanding.xhtml" 
+					|| pageName==="marketPlaceRegistrationAmazon.xhtml"
+					|| pageName==="marketPlaceRegistrationEbay.xhtml"
+					|| pageName==="marketPlaceRegistration.xhtml"){
+				// changing image
+				$("#accountImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-account-selected.png");
+				// to expand list
+				$("#account").find('ul').toggle();
+				// highlighting parents (which is side line)
+				$(".selectedActItem").parent().parent().parent().addClass("active");
+				// highlighting siblings
+				$(".selectedActItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".account").addClass("activeParent");
+				// highlight the selected item based on the link
+				$("#manageactAccs").removeClass("activeSibling");
+				$("#manageMarketplaceReg").addClass("active");
+			}
+			else if(pageName=="skuManageProducts.xhtml" || pageName == "skuBulkUpload.xhtml" || pageName == "skuAddProduct.xhtml"){
+				// changing image
+				$("#accountImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-account-selected.png");
+				// to expand list
+				$("#account").find('ul').toggle();
+				// highlighting parents (which is side line)
+				$(".selectedActItem").parent().parent().parent().addClass("active");
+				// highlighting siblings
+				$(".selectedActItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".account").addClass("activeParent");
+				// highlight the selected item based on the link
+				$("#skuManageProds").removeClass("activeSibling");
+				$("#skuManageProds").addClass("active");
+			}//RTC-116247 Aishwarya Start
+			else if(pageName=="manageholidays.xhtml" || pageName == "addholiday.xhtml" ||  pageName == "holidayBulkUpload.xhtml"){
+				// changing image
+				$("#accountImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-account-selected.png");
+				// to expand list
+				$("#account").find('ul').toggle();
+				// highlighting parents (which is side line)
+				$(".selectedActItem").parent().parent().parent().addClass("active");
+				// highlighting siblings
+				$(".selectedActItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".account").addClass("activeParent");
+				// highlight the selected item based on the link
+				$("#manageholiday").removeClass("activeSibling");
+				$("#manageholiday").addClass("active");
+			}//RTC-116247 Aishwarya End
+			else if(pageName=="manageUsers.xhtml"){
+				// changing image
+				$("#accountImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-account-selected.png");
+				// to expand list
+				$("#account").find('ul').toggle();
+				// highlighting parents (which is side line)
+				$(".selectedActItem").parent().parent().parent().addClass("active");
+				// highlighting siblings
+				$(".selectedActItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".account").addClass("activeParent");
+				// highlight the selected item based on the link
+				$("#manageact").removeClass("activeSibling");
+				$("#manageUsers").addClass("active");
+			} 			
+			else if (pageName == "ReloadProperty.xhtml") {
+				
+				// changing image
+				$("#supportConfigImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-supportconfig-selected.png");
+				// to expand list
+				$("#supportconfigId").find('ul').toggle();
+				// highlighting parents (which is side line)
+				$(".selectedCofigurationItem").parent().parent().parent().addClass("active");
+				// highlighting siblings
+				$(".selectedCofigurationItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".supportconfigId").addClass("activeParent");
+
+				// highlight the selected item
+				$("#reloadproperty").removeClass("activeSibling");
+				$("#reloadproperty").addClass("active");
+			}
+			else if (pageName == "ReloadCache.xhtml") {
+				
+				
+				// changing image
+				$("#supportConfigImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-supportconfig-selected.png");
+				// to expand list
+				$("#supportconfigId").find('ul').toggle();
+				// highlighting parents (which is side line)
+				$(".selectedCofigurationItem").parent().parent().parent().addClass("active");
+				// highlighting siblings
+				$(".selectedCofigurationItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".supportconfigId").addClass("activeParent");
+
+				// highlight the selected item
+				$("#reloadcache").removeClass("activeSibling");
+				$("#reloadcache").addClass("active");
+			
+			}
+			else if (pageName == "InventoryStatus.xhtml") {
+				// changing image
+				$("#supportConfigImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-supportconfig-selected.png");
+				// to expand list
+				$("#supportconfigId").find('ul').toggle();
+				// highlighting parents (which is side line)
+				$(".selectedCofigurationItem").parent().parent().parent().addClass("active");
+				// highlighting siblings
+				$(".selectedCofigurationItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".supportconfigId").addClass("activeParent");
+				// highlight the selected item based on the link
+				$("#invstatus").removeClass("activeSibling");
+				$("#invstatus").addClass("active");
+			}
+			
+			else if (pageName == "ResourceBundle.xhtml") {
+				// changing image
+				$("#supportConfigImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-supportconfig-selected.png");
+				// to expand list
+				$("#supportconfigId").find('ul').toggle();
+				// highlighting parents (which is side line)
+				$(".selectedCofigurationItem").parent().parent().parent().addClass("active");
+				// highlighting siblings
+				$(".selectedCofigurationItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".supportconfigId").addClass("activeParent");
+				// highlight the selected item based on the link
+				$("#propreader").removeClass("activeSibling");
+				$("#propreader").addClass("active");
+			}
+			else if (pageName ==  "InventaryAdjustment.xhtml") {
+				// changing image
+				$("#supportConfigImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-supportconfig-selected.png");
+				// to expand list
+				$("#supportconfigId").find('ul').toggle();
+				// highlighting parents (which is side line)
+				$(".selectedCofigurationItem").parent().parent().parent().addClass("active");
+				// highlighting siblings
+				$(".selectedCofigurationItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".supportconfigId").addClass("activeParent");
+				// highlight the selected item based on the link
+				$("#invAdjustment").removeClass("activeSibling");
+				$("#invAdjustment").addClass("active");
+			} else if (pageName ==  "TrackingUpdate.xhtml") {
+				// changing image
+				$("#supportConfigImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-supportconfig-selected.png");
+				// to expand list
+				$("#supportconfigId").find('ul').toggle();
+				// highlighting parents (which is side line)
+				$(".selectedCofigurationItem").parent().parent().parent().addClass("active");
+				// highlighting siblings
+				$(".selectedCofigurationItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".supportconfigId").addClass("activeParent");
+				// highlight the selected item based on the link
+				$("#trackUpdate").removeClass("activeSibling");
+				$("#trackUpdate").addClass("active");
+			}
+			else if (pageName ==  "reloadCronValues.xhtml") {
+				// changing image
+				$("#supportConfigImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-supportconfig-selected.png");
+				// to expand list
+				$("#supportconfigId").find('ul').toggle();
+				// highlighting parents (which is side line)
+				$(".selectedCofigurationItem").parent().parent().parent().addClass("active");
+				// highlighting siblings
+				$(".selectedCofigurationItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".supportconfigId").addClass("activeParent");
+				// highlight the selected item based on the link
+				$("#reloadCronValues").removeClass("activeSibling");
+				$("#reloadCronValues").addClass("active");
+			} else if (pageName ==  "manageUserRoles.xhtml") {
+				// changing image
+				$("#supportConfigImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-supportconfig-selected.png");
+				// to expand list
+				$("#supportconfigId").find('ul').toggle();
+				// highlighting parents (which is side line)
+				$(".selectedCofigurationItem").parent().parent().parent().addClass("active");
+				// highlighting siblings
+				$(".selectedCofigurationItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".supportconfigId").addClass("activeParent");
+				// highlight the selected item based on the link
+				$("#manageUserRole").removeClass("activeSibling");
+				$("#manageUserRole").addClass("active");
+			}
+
+			// START - 2.2 RELEASE - INFOSYS - Links for Getting Started
+			// and FAQs
+			else if (pageName=="gettingStartedLandingPage.xhtml") {
+
+				// to expand list
+				$("#getStarted").find('ul').toggle();
+				$(".getStartedNow").addClass("activeParent");
+				// highlighting parents (which is side line)
+				$(".getStartedItem").parent().parent().parent()
+						.addClass("active");
+				$(".getStartedItem").addClass("activeSibling");
+				$("#getStartedVideos").removeClass("activeSibling");
+				$("#getStartedVideos").addClass("active");
+				$("#getStartedImg")
+				.attr("src",
+						"../../resources/ui-template-0.4/img/iconGettingStarted3.png");
+		        $("#getStartedLink").addClass("active");
+
+			}
+			else if (pageName=="gettingStartedUserGuidePage.xhtml") {
+
+				// to expand list
+				$("#getStarted").find('ul').toggle();
+				$(".getStartedNow").addClass("activeParent");
+				// highlighting parents (which is side line)
+				$(".getStartedItem").parent().parent().parent()
+						.addClass("active");
+				$(".getStartedItem").addClass("activeSibling");
+				$("#getStartedUserGuide").removeClass("activeSibling");
+				$("#getStartedUserGuide").addClass("active");
+				$("#getStartedImg")
+				.attr("src",
+						"../../resources/ui-template-0.4/img/iconGettingStarted3.png");
+		        $("#getStartedLink").addClass("active");
+
+			}
+			else if (pageName == "gettingStartedConfigPage.xhtml") {
+
+				// to expand list
+				$("#getStarted").find('ul').toggle();
+
+				// highlighting parents (which is side line)
+				$(".getStartedItem").parent().parent().parent()
+						.addClass("active");
+				// highlighting siblings
+				$(".getStartedItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".getStartedNow").addClass("activeParent");
+				// highlight the selected item based on the link
+				$("#getStartedConfig").removeClass("activeSibling");
+				$("#getStartedConfig").addClass("active");
+				$("#getStartedImg")
+				.attr("src",
+						"../../resources/ui-template-0.4/img/iconGettingStarted2.png");
+		        $("#getStartedLink").addClass("active");
+			} else if (pageName == "performTrackingVideo.xhtml") {
+				// to expand list
+				$("#getStarted").find('ul').toggle();
+
+				// highlighting parents (which is side line)
+				$(".getStartedItem").parent().parent().parent()
+						.addClass("active");
+				// highlighting siblings
+				$(".getStartedItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".getStartedNow").addClass("activeParent");
+				// highlight the selected item based on the link
+				$("#perfTracking").removeClass("activeSibling");
+				$("#perfTracking").addClass("active");
+				$("#getStartedImg")
+				.attr("src",
+						"../../resources/ui-template-0.4/img/iconGettingStarted2.png");
+		        $("#getStartedLink").addClass("active");
+			} else if (pageName == "generateReportsVideo.xhtml") {
+				// to expand list
+				$("#getStarted").find('ul').toggle();
+
+				// highlighting parents (which is side line)
+				$(".getStartedItem").parent().parent().parent()
+						.addClass("active");
+				// highlighting siblings
+				$(".getStartedItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".getStartedNow").addClass("activeParent");
+				// highlight the selected item based on the link
+				$("#genReport").removeClass("activeSibling");
+				$("#genReport").addClass("active");
+				$("#getStartedImg")
+				.attr("src",
+						"../../resources/ui-template-0.4/img/iconGettingStarted2.png");
+		        $("#getStartedLink").addClass("active");
+			}else if(pageName=="customTemplate.xhtml"){
+				// changing image
+				$("#accountImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-account-selected.png");
+				// to expand list
+				$("#account").find('ul').toggle();
+				// highlighting parents (which is side line)
+				$(".selectedActItem").parent().parent().parent().addClass("active");
+				// highlighting siblings
+				$(".selectedActItem").addClass("activeSibling");
+				// highlight parent with different color
+				$(".account").addClass("activeParent");
+				// highlight the selected item based on the link
+				$("#customTemplate").removeClass("activeSibling");
+				$("#customTemplate").addClass("active");
+			} else if (pageName == "customerServiceFAQ.xhtml") {
+				$("#CSFAQImg")
+						.attr("src",
+								"../../resources/ui-template-0.4/img/portal-icon-customer-service-FAQs-selected.png");
+				$("#CSFAQLink").addClass("active");
+			}
+			
+			$('#myModal').on('hidden.bs.modal', function () {
+                PF('countrylist').selectValue("0");
+          });
+
+
+			// END - 2.2 RELEASE - INFOSYS - Links for Getting Started
+			// and FAQs
+
+		});
+
+$.fn.clearForm = function() {
+	return this.each(function() {
+		var type = this.type, tag = this.tagName.toLowerCase();
+		if (tag == 'form')
+			return $(':input', this).clearForm();
+		if (type == 'text' || type == 'password' || tag == 'textarea')
+			this.value = '';
+		else if (type == 'checkbox' || type == 'radio')
+			this.checked = false;
+		else if (tag == 'select')
+			this.selectedIndex = -1;
+	});
+};
+
+/*******************************************************************************
+ * Terminate session upon browser closed
+ ******************************************************************************/
+//var inFormOrLink;
+//var unloading = false;
+//$('a').live('click', function() {
+//inFormOrLink = true;
+//});
+//$('form').bind('submit', function() {
+//inFormOrLink = true;
+//});
+//$('button').live('click', function() {
+//inFormOrLink = true;
+//});
+
+//window.onbeforeunload = function() {
+//if (!inFormOrLink) {
+//invalidateSession();
+//}
+//};
+function invalidateSession() {
+	$.ajax({
+		type : "POST",
+		url : "../../multisessionservlet",
+	});
+
+}
+
+function toggleBatteryOptions(element) {
+	if (element.checked) {
+		document.getElementById('createProductForm:dangerousType').disabled = false;
+	} else {
+		document.getElementById('createProductForm:dangerousType').disabled = true;
+	}
+}
+//exp-vikas js starts
+function toggleAdvFilter() {
+	if (document.getElementById('skuLookupForm:advFilter').style.display == "block") {
+		document.getElementById('skuLookupForm:advFilter').style.display = "none";
+		document.getElementById('minusImage').style.display = "none";
+		document.getElementById('addImage').style.display = "inline";
+	} else {
+		document.getElementById('skuLookupForm:advFilter').style.display = "block";
+		document.getElementById('addImage').style.display = "none";
+		document.getElementById('minusImage').style.display = "inline";
+
+	}
+}
+//return order landing page
+function toggleReturnAdvFilter(){
+	if(document.getElementById('returnOrderLookupForm:advSearchPanel').style.display == "block"){
+		document.getElementById('returnOrderLookupForm:advSearchPanel').style.display="none";
+		document.getElementById('minusImage').style.display="none";
+		document.getElementById('addImage').style.display="inline";
+	}
+	else{
+		document.getElementById('returnOrderLookupForm:advSearchPanel').style.display="block";
+		document.getElementById('addImage').style.display="none";
+		document.getElementById('minusImage').style.display="inline";
+		
+	}
+}
+function doBulkAction(value) {
+	if (value != 0)
+		document.getElementById("multiProdSelect").show();
+}
+//exp-vikas js ends
+
+function toggleCrossBorderLayout(element) {
+	if (document.getElementById('createProductForm:crossBorderLayout').style.display == "block")
+		document.getElementById('createProductForm:crossBorderLayout').style.display = "none";
+	else
+		document.getElementById('createProductForm:crossBorderLayout').style.display = "block";
+}
+
+function changeBackgroundColorOrder(id) {
+
+	var idList = [ "skuLookupForm\\:all", "skuLookupForm\\:submit",
+	               "skuLookupForm\\:confirmed", "skuLookupForm\\:cancelled",
+	               "skuLookupForm\\:delivered" ];
+
+	idList.map(function(item) {
+		$("#" + item).removeClass("changeBackground");
+		return null;
+	});
+	var s = "#" + id.replace(/\:/g, '\\:');
+	$(s).addClass("changeBackground");
+}
+
+function changeBackgroundColorProduct(id) {
+
+	var idList = [ "skuLookupForm\\:all", "skuLookupForm\\:active",
+	               "skuLookupForm\\:inTransit", "skuLookupForm:damaged",
+	               "skuLookupForm:onHold" ];
+
+	idList.map(function(item) {
+		$("#" + item).removeClass("changeBackground");
+		return null;
+	});
+	var s = "#" + id.replace(/\:/g, '\\:');
+	$(s).addClass("changeBackground");
+}
+
+function changeBackgroundColorDashboard(id) {
+
+	var idList = [ "dashboardForm\\:all", "dashboardForm\\:orderBtn",
+	               "dashboardForm\\:prodBtn" ];
+
+	idList.map(function(item) {
+		$("#" + item).removeClass("changeBackground");
+		return null;
+	});
+	var s = "#" + id.replace(/\:/g, '\\:');
+	$(s).addClass("changeBackground");
+}
+
+function getUrlParameter(sParam) {
+	var sPageURL = window.location.search.substring(1);
+	var sURLVariables = sPageURL.split('&');
+	for (var i = 0; i < sURLVariables.length; i++) {
+		var sParameterName = sURLVariables[i].split('=');
+		if (sParameterName[0] == sParam) {
+			return sParameterName[1];
+		}
+	}
+}
+
+/*******************************************************************************
+ * Product Search toggel area
+ ******************************************************************************/
+function toggleProductSearch() {
+	if (document.getElementById('skuLookupForm:advSearchPanel').style.display == 'block') {
+		document.getElementById('skuLookupForm:advSearchPanel').style.display = 'none';
+		document.getElementById('skuLookupForm:advSearchLink').style.visibility = "visible";
+		document.getElementById('skuLookupForm:basicSearchBtn').style.visibility = "visible";
+	} else {
+		document.getElementById('skuLookupForm:advSearchPanel').style.display = "block";
+		document.getElementById('skuLookupForm:advSearchLink').style.display = "block";
+		document.getElementById('skuLookupForm:advSearchLink').style.visibility = "hidden";
+		document.getElementById('skuLookupForm:basicSearchBtn').style.visibility = "hidden";
+	}
+
+}
+
+
+function toggleShpOrderSearch() {
+
+	var basicPanel = document.getElementById('shipordersForm:tabView:basicSearchPanel');
+	var advPanel = document.getElementById('shipordersForm:tabView:advSearchPanel');
+
+	if(advPanel.style.display == 'none') {
+
+		basicPanel.style.display = 'none';
+		advPanel.style.display = 'block';
+
+	} else {
+
+		basicPanel.style.display = 'block';
+		advPanel.style.display = 'none';
+
+	}
+}
+
+function toggleShpSearch() {
+	
+	var advPanel = document.getElementById('shipordersForm:advPanel');
+	var advPanel2 = document.getElementById('shipordersForm:advPanel2');
+	var basicLink = document.getElementById('shipordersForm:basicLink');
+	var advLink = document.getElementById('shipordersForm:advSearchShpLink');
+	if(advPanel.style.display == 'none') {
+		advPanel.style.display = '';
+		advPanel2.style.display = '';
+		basicLink.style.display = '';
+		advLink.style.display = 'none';
+	} else {		
+		advPanel.style.display = 'none';
+		advPanel2.style.display = 'none';
+		basicLink.style.display = 'none';
+		advLink.style.display = '';
+	}
+}
+
+function toggleShpItemSearch() {
+	
+	var advPanel = document.getElementById('skuLookupSearchForm:advPanel');
+	var advPanel2 = document.getElementById('skuLookupSearchForm:advPanel2');
+	var basicLink = document.getElementById('skuLookupSearchForm:basicLink');
+	var advLink = document.getElementById('skuLookupSearchForm:advSearchShpLink');
+	if(advPanel.style.display == 'none') {
+		advPanel.style.display = '';
+		advPanel2.style.display = '';
+		basicLink.style.display = '';
+		advLink.style.display = 'none';
+
+	} else {		
+		advPanel.style.display = 'none';
+		advPanel2.style.display = 'none';
+		basicLink.style.display = 'none';
+		advLink.style.display = '';
+	}
+}
+
+function toggleAccountSearch(){
+
+	var advPanel = document.getElementById('skuLookupForm:advSearchPanel');		
+	var basicreset = document.getElementById('skuLookupForm:basicResetBtnGrid');
+	var basicSearch = document.getElementById('skuLookupForm:basicSearchBtnGrid');
+	var advLink = document.getElementById('skuLookupForm:advLinkGrid');
+	var actType = document.getElementById('skuLookupForm:actTypeGrid');
+	var salesOrg = document.getElementById('skuLookupForm:salesOrgGrid');
+
+	if(advPanel.style.display == 'none'){			
+		advPanel.style.display = '';			
+		basicreset.style.display='none';
+		basicSearch.style.display='none';
+		advLink.style.display='none';			
+		actType.style.display='';
+		salesOrg.style.display='';			
+	}else{
+		advPanel.style.display = 'none';			
+		basicreset.style.display='';
+		basicSearch.style.display='';
+		advLink.style.display='';			
+		actType.style.display='none';
+		salesOrg.style.display='none';			
+	}
+}
+/************* Search Toggle Area *********************/
+function toggleSearchPanel() {
+	if (document.getElementById('skuLookupForm:advSearchPanel').style.display == 'block') {
+		document.getElementById('skuLookupForm:search-area').style.width = '85%';
+		document.getElementById('skuLookupForm:advSearchPanel').style.display = 'none';
+		document.getElementById('skuLookupForm:advSearchLink').style.visibility = "visible";
+		document.getElementById('skuLookupForm:basicSearchBtn').style.visibility = "visible";
+		document.getElementById('skuLookupForm:resetBtn').style.visibility = "visible";
+	} else {
+		document.getElementById('skuLookupForm:search-area').style.width = '85%';
+		document.getElementById('skuLookupForm:advSearchPanel').style.display = "block";
+		document.getElementById('skuLookupForm:advSearchLink').style.display = "block";
+		document.getElementById('skuLookupForm:advSearchLink').style.visibility = "hidden";
+		document.getElementById('skuLookupForm:basicSearchBtn').style.visibility = "hidden";
+		document.getElementById('skuLookupForm:resetBtn').style.visibility = "hidden";
+	}
+	
+}
+
+//20151231 - START - INFOSYS - New functions for CS module
+function onCountryChange(value){
+    if(value==="0"){
+          return;
+    }
+    fetchDetails();
+}
+
+
+//20151231 - START - INFOSYS - New function for Track link on Tracking pages
+function trackSearchInternal(elementId){
+
+//this would hide when you click on input button
+  var element = document.getElementById(elementId);
+    if (element != null) {
+        if(element.style.display == 'none'){
+            element.style.display = 'block';
+        }else{
+            element.style.display = 'none';
+        }
+
+    }
+}
+//20151231 - END - INFOSYS - New function for Track link on Tracking pages
+//138236-Start -if user selects same country in second attempt no overlay appears
+function dropdown_clear()
+{
+	$('#myModal').on('hidden.bs.modal', function () {
+        PF('countrylist').selectValue("0");
+  }) 
+ //138236-End -if user selects same country in second attempt no overlay appears
+	  
+
+}
+//Defect-164815 Infosys Start
+function resetAccordion(wVar,dialogVar) {
+	var acc = PF(wVar);
+	if (acc) {
+		if (!isNaN(acc.cfg.active)) {
+			acc.unselect(acc.cfg.active);
+		}
+	}
+}
+//Defect-164815 Infosys End
+function tabChangeCheck(tabVar) {
+	var tab = PF(tabVar);
+	if (tab && tab.cfg && !tab.cfg.selected) {
+		return false;
+	}
+	return true;
+}
+
+/**
+ * @returns void
+ */
+function showLoader() {
+	var widget = PF('blockUIWidget');
+	if (widget) {
+		widget.show();
+	}
+}
+
+/**
+ * @returns void
+ */
+function hideLoader() {
+	var widget = PF('blockUIWidget');
+	if (widget) {
+		widget.hide();
+	}
+}
+
+/**
+ * @param dlg Dialog widgetVar
+ * @returns void
+ */
+function prepareContentStart(dlg) {
+	PF(dlg).hide();
+	showLoader();
+}
+
+/**
+ * @param frm Form name
+ * @param args Primefaces args
+ * @returns void
+ */
+function prepareContentComplete(frm, args) {
+	hideLoader();
+	window.scrollTo(0,0);
+	if (args.isValid) {
+		window.document.getElementById(frm + ':' + 'downloadStreamContent').click();
+	}
+}
+
+/**
+ * @param frm Form name
+ * @returns void
+ */
+function prepaidContentComplete(frm) {
+	hideLoader();
+	window.scrollTo(0,0);
+	window.document.getElementById(frm + ':' + 'downloadStreamContent').click();
+}
+
+function scrolltoTopCustomerDropDown() {
+	var x = document.getElementById("custForm:customer_items");
+	var x1 = document.getElementById("custForm:customer1_items");
+	var x2 = document.getElementById("custForm:customer2_items");
+	var x3 = document.getElementById("custForm:customer3_items");
+	if (x != null) {
+		x.scrollIntoView();
+	} else if (x1 != null) {
+		x1.scrollIntoView();
+	} else if (x2 != null) {
+		x2.scrollIntoView();
+	} else if (x3 != null) {
+		x3.scrollIntoView();
+	}
+}
+function reloadPageWithoutLocale(currentElement) {
+	var searchStr = $(currentElement).closest("form").attr("action");
+	var idx = searchStr.indexOf("?");
+	if (idx != -1) {
+		var newUrl = searchStr.substring(0, idx);
+		searchStr = searchStr.substring(idx, searchStr.length);
+		var query = "";
+
+		if (searchStr) {
+			searchStr = searchStr.substring(1, searchStr.length);
+			var params = searchStr.split(/[&]/g);
+			var splitParams = [];
+
+			for (var i = 0, j = 0; i < params.length; i++) {
+				if (params[i].indexOf("locale=") != 0) {
+					splitParams[j++] = params[i];
+				}
+			}
+
+			if (splitParams.length > 0) {
+				query = "?" + splitParams.join("&");
+			}
+		}
+		$(currentElement).closest("form").attr("action", newUrl + query);
+		// window.location.href = window.location.pathname + query + window.location.hash;
+	}
+}
+
+
+function getValueFromData(val){
+	if(val=="" || val==null){
+		return null;
+	}
+	return val;
+}
+
+function getValueByElementId(id){
+	var element=document.getElementById(id);
+	if(element!=null){
+		return element.value;	
+	}
+	return null;
+}
+
+function load(){
+
+	var myForm = $('#createShipmentForm');
+	var disabled = myForm.find(':input:disabled').removeAttr('disabled');
+	var dataArray = myForm.serializeArray();
+	disabled.attr('disabled','disabled');
+    dataObj = {};
+
+	$(dataArray).each(function(i, field){
+		dataObj[field.name] = field.value;
+		console.log(field.name);
+	});
+	
+	var params = [];
+	console.log(getValueFromData(dataObj['createShipmentForm:consigneeNameD']));
+	params[0]={name:'consigneeNameD', value:getValueFromData(dataObj['createShipmentForm:consigneeNameD'])};
+	console.log(getValueFromData(dataObj['createShipmentForm:postalcodeAutoD'])!=null?getValueFromData(dataObj['createShipmentForm:postalcodeAutoD']):getValueFromData(dataObj['createShipmentForm:postalcodeAutoD_input']));
+	params[1]={name:'postalcodeAutoD', value:getValueFromData(dataObj['createShipmentForm:postalcodeAutoD'])!=null?getValueFromData(dataObj['createShipmentForm:postalcodeAutoD']):getValueFromData(dataObj['createShipmentForm:postalcodeAutoD_input'])};
+	var city = getValueFromData(dataObj['createShipmentForm:consCityDistrictTxt'])!=null?getValueFromData(dataObj['createShipmentForm:consCityDistrictTxt']):getValueFromData(dataObj['createShipmentForm:consCityDistrictTxt_input']);
+	if(city =="" || city==null) {
+		city=getValueFromData(dataObj['createShipmentForm:consCityDistrict_input']);
+	}
+	console.log(city);
+	params[2]={name:'consCityDistrict', value:city};
+	console.log(getValueFromData(dataObj['WeightD']));
+	params[3]={name:'WeightD', value:getValueFromData(dataObj['createShipmentForm:WeightD'])};
+	console.log(getValueFromData(dataObj['createShipmentForm:cashondeliverycheckbox']));
+	params[4]={name:'cashondelivery', value:getValueFromData(dataObj['createShipmentForm:cashondeliverycheckbox'])};
+	console.log(getValueFromData(dataObj['createShipmentForm:insurancetextbox']));
+	params[5]={name:'insurance', value:getValueFromData(dataObj['createShipmentForm:insurancetextbox'])};
+	console.log(getValueFromData(dataObj['createShipmentForm:shipperName']));
+	params[6]={name:'shipperName', value:getValueFromData(dataObj['createShipmentForm:shipperName'])};
+	console.log(getValueFromData(dataObj['createShipmentForm:shipperPostalCode']));
+	params[7]={name:'shipperPostalCode', value:getValueFromData(dataObj['createShipmentForm:shipperPostalCode'])};
+	console.log(getValueFromData(dataObj['createShipmentForm:shipperCity']));
+	params[8]={name:'shipperCity', value:getValueFromData(dataObj['createShipmentForm:shipperCity'])};
+	console.log(getValueFromData(dataObj['createShipmentForm:consStateProvDTxt'])!=null?getValueFromData(dataObj['createShipmentForm:consStateProvDTxt']):getValueFromData(dataObj['createShipmentForm:consStateProvD_input']));
+    params[9] = {name : 'province',	value : getValueFromData(dataObj['createShipmentForm:consStateProvDTxt'])!=null?getValueFromData(dataObj['createShipmentForm:consStateProvDTxt']):getValueFromData(dataObj['createShipmentForm:consStateProvDTxt_input'])};
+	console.log(getValueFromData(dataObj['createShipmentForm:shipperCountry_input']));
+	params[10]={name:'shipperCountry', value:getValueFromData(dataObj['createShipmentForm:shipperCountry_input'])};
+	console.log(getValueFromData(dataObj['createShipmentForm:currencyD_input']));
+	params[11] = {name : 'currency',value : getValueFromData(dataObj['createShipmentForm:currencyD_input'])};
+	console.log(getValueFromData(dataObj['createShipmentForm:shipperState']));
+	params[12]={name:'shipperState', value:getValueFromData(dataObj['createShipmentForm:shipperState'])};
+	remoC(params);
+}
+
+function loadInt(){
+	var params = [];
+	console.log(getValueByElementId("createShipmentForm2:consigneeName"));
+	params[0]={name:'consigneeName', value:getValueByElementId("createShipmentForm2:consigneeName")};
+	
+	if(getValueByElementId("createShipmentForm2:postalcode") != null) {
+		console.log(getValueByElementId("createShipmentForm2:postalcode"));
+		params[1]={name:'postalcode', value:getValueByElementId("createShipmentForm2:postalcode")};
+	} else if (getValueByElementId("createShipmentForm2:postalcode_input") != null) {
+		console.log(getValueByElementId("createShipmentForm2:postalcode_input"));
+		params[1]={name:'postalcode', value:getValueByElementId("createShipmentForm2:postalcode_input")};
+	} else if (getValueByElementId("createShipmentForm2:postalcodeAutoXBO") != null) {
+		console.log(getValueByElementId("createShipmentForm2:postalcodeAutoXBO"));
+		params[1]={name:'postalcode', value:getValueByElementId("createShipmentForm2:postalcodeAutoXBO")};
+	} else if (getValueByElementId("createShipmentForm2:postalcodeAutoXBO_input") != null) {
+		console.log(getValueByElementId("createShipmentForm2:postalcodeAutoXBO_input"));
+		params[1]={name:'postalcode', value:getValueByElementId("createShipmentForm2:postalcodeAutoXBO_input")};
+	}
+	
+	if(getValueByElementId("createShipmentForm2:city") != null) {
+		console.log(getValueByElementId("createShipmentForm2:city"));
+		params[2]={name:'city', value:getValueByElementId("createShipmentForm2:city")};
+	} else if(getValueByElementId("createShipmentForm2:consCityDistrictTxt2") != null) {
+		params[2]={name:'city', value:getValueByElementId("createShipmentForm2:consCityDistrictTxt2")};
+	} else if(getValueByElementId("createShipmentForm2:consCityDistrictTxt") != null) {
+		params[2]={name:'city', value:getValueByElementId("createShipmentForm2:consCityDistrictTxt")};
+	} else if (getValueByElementId("createShipmentForm2:consCityDistrictTxt_input")  != null) {
+		params[2]={name:'city', value:getValueByElementId("createShipmentForm2:consCityDistrictTxt_input")};
+	} else if(getValueFromData("createShipmentForm2:consCityDistrictXBO_input")  != null) {
+		params[2]={name:'city', value:getValueByElementId("createShipmentForm2:consCityDistrictXBO_input")};
+	}
+	
+	console.log(getValueByElementId("createShipmentForm2:totalDeclaredValue"));
+	params[3]={name:'totalDeclaredValue', value:getValueByElementId("createShipmentForm2:totalDeclaredValue")};
+	
+	console.log(getValueByElementId("createShipmentForm2:Weight"));
+	params[4]={name:'Weight', value:getValueByElementId("createShipmentForm2:Weight")};
+	
+	console.log(getValueByElementId("createShipmentForm2:cashondeliverycheckbox"));
+	params[5]={name:'cashondelivery', value:getValueByElementId("createShipmentForm2:cashondeliverycheckbox")};
+	
+	console.log(getValueByElementId("createShipmentForm2:insurancetextbox2"));
+	params[6]={name:'insurance', value:getValueByElementId("createShipmentForm2:insurancetextbox2")};
+	
+	var currency=null;
+	var ccyElement = document.getElementById('createShipmentForm2:currency_input');
+	if (ccyElement != null) {
+		currency = ccyElement.options[ccyElement.selectedIndex].value;
+	}
+	console.log(currency);
+	params[7] = {name : 'currency',	value : currency};
+	
+	var incoterm=null;
+	var element = document.getElementById('createShipmentForm2:incoterm_input');
+	if (element != null) {
+		incoterm = element.options[element.selectedIndex].value;
+	}
+	console.log(incoterm);
+	params[8]={name:'incoterm', value:incoterm};
+	
+
+	var state = null;
+	var stateElement = document.getElementById('createShipmentForm2:consStateProvXBO_input');
+	if(stateElement != null) {
+		state = stateElement.options[stateElement.selectedIndex].value;
+		params[9]={name:'state', value:state};
+	} else if(getValueByElementId("createShipmentForm2:consStateProvXBOTxt") != null) {
+		params[9]={name:'state', value:getValueByElementId("createShipmentForm2:consStateProvXBOTxt")};
+	} else if (getValueByElementId("createShipmentForm2:consStateProvXBOTxt_input")  != null) {
+		params[9]={name:'state', value:getValueByElementId("createShipmentForm2:consStateProvXBOTxt_input")};
+	} else if(getValueFromData("createShipmentForm2:consStateProvXBO_input")  != null) {
+		params[9]={name:'state', value:getValueByElementId("createShipmentForm2:consStateProvXBO_input")};
+	} else if (getValueByElementId("createShipmentForm2:consStateProvXBO") != null) {
+		params[9]={name:'state', value:getValueByElementId("createShipmentForm2:consStateProvXBO")};
+	}	
+	remoI(params);
+}
+

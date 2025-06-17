@@ -1,0 +1,10 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+ecommerceportal.dhl.com	TRUE	/track	FALSE	1999999999	JSESSIONID	5E7DBAA1B7BEF6F61C61B0CE9D0F2776
+ecommerceportal.dhl.com	TRUE	/track	FALSE	1999999999	showBanner	true
+ecommerceportal.dhl.com	TRUE	/track	FALSE	1999999999	TS01856760	010448b6556d27f6a381e790c4eef5721762f35df75e86fb4ba7dc5b5e5421a71e57c1131e5ad88285f01c3e676c0be15f2c06d1b89bda3322c5b5d531872ea9ed07cdf8cf6d7140adc839d81086566e401bf9ec48
+ecommerceportal.dhl.com	TRUE	/	FALSE	1999999999	ApplicationGatewayAffinity	303ce69904d3c92a4bb003f85ee7e90e9b2ed0e4b9478728d497abce06972a58
+ecommerceportal.dhl.com	TRUE	/	FALSE	1999999999	ApplicationGatewayAffinityCORS	303ce69904d3c92a4bb003f85ee7e90e9b2ed0e4b9478728d497abce06972a58
+ecommerceportal.dhl.com	TRUE	/	FALSE	1999999999	SameSite	None
+.ecommerceportal.dhl.com	TRUE	/	FALSE	1999999999	TS01e74c4b	010448b655070ad528239e4ef6636615142df7f25fc23b584a6534493b4dbc21eeec8e5630569117291ba25049dee03454d20caddf
+

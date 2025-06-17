@@ -1,0 +1,282 @@
+$(document).ready(function() {
+	var urlPath = location.pathname;
+	var temp = urlPath.split("/");
+	var pageName = temp[temp.length - 1];
+	if (pageName == "mydashboard-0.2.xhtml") {
+		$(".dashboardSelected").addClass("active");
+		$(".dashboardSelected").parent().addClass("active");
+		// changing icon to selected one
+		$("#dashBoardImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-dashboard-selected.png");
+	} else if (pageName == "lookupprod-0.3.xhtml" || pageName == "createProduct-0.3.xhtml" || pageName == "viewprod-0.3.xhtml" || pageName == "updateprod-0.3.xhtml" || pageName == "sendinventory-0.3.xhtml" || pageName=="prodBulkUpload.xhtml" || pageName=="prodBulkUpload-0.4.xhtml" ) {
+		// changing image
+		$("#prodInvImg").attr("src", "../../resources/ui-template-0.4/img/portal-icon-products-selected.png");
+		// to expand list
+		$("#prodInventory").find('ul').toggle();
+		// highlighting parents (which is side line)
+		$(".prodItem").parent().parent().parent().addClass("active");
+		// highlighting siblings
+		$(".prodItem").addClass("activeSibling");
+		// highlight parent with different color
+		$(".prodInventory").addClass("activeParent");
+
+		// highlisght the selected item
+		$("#manageProd").removeClass("activeSibling");
+		$("#manageProd").addClass("active");
+	} else if (pageName == "troubleshootingInv-0.3.xhtml") {
+		// changing image
+		$("#prodInvImg").attr("src", "../../resources/ui-template-0.4/img/portal-icon-products-selected.png");
+		// to expand list
+		$("#prodInventory").find('ul').toggle();
+		// highlighting parents (which is side line)
+		$(".prodItem").parent().parent().parent().addClass("active");
+		// highlighting siblings
+		$(".prodItem").addClass("activeSibling");
+		// highlight parent with different color
+		$(".prodInventory").addClass("activeParent");
+
+		// highlisght the selected item
+		$("#prodTrblSht").removeClass("activeSibling");
+		$("#prodTrblSht").addClass("active");
+	} else if (pageName == "inventoryAdjustment.xhtml") {
+        // changing image
+        $("#prodInvImg")
+                      .attr("src",
+                                    "../../resources/ui-template-0.4/img/portal-icon-products-selected.png");
+        // to expand list
+        $("#prodInventory").find('ul').toggle();
+        // highlighting parents (which is side line)
+        $(".prodItem").parent().parent().parent().addClass(
+                      "active");
+        // highlighting siblings
+        $(".prodItem").addClass("activeSibling");
+        // highlight parent with different color
+        $(".prodInventory").addClass("activeParent");
+
+        // highlisght the selected item
+        $("#invAdjust").removeClass("activeSibling");
+        $("#invAdjust").addClass("active");
+ } else if (pageName == "lookuporder-0.3.xhtml" || pageName == "createOrder-0.3.xhtml" || pageName == "orderDetails-0.3.xhtml" || pageName == "editOrder-0.3.xhtml" || pageName=="splitOrder-0.3.xhtml" || pageName=="splitOrderDetails-0.3.xhtml" || pageName=="bulkOrder-0.3.xhtml" || pageName=="bulkOrder-0.4.xhtml" ) {
+		// changing image
+		$("#ordRtrnImg").attr("src", "../../resources/ui-template-0.4/img/portal-icon-orders-selected.png");
+		// to expand list
+		$("#orderReturns").find('ul').toggle();
+		// highlighting parents (which is side line)
+		$(".orderItem").parent().parent().parent().addClass("active");
+		// highlighting siblings
+		$(".orderItem").addClass("activeSibling");
+		// highlight parent with different color
+		$(".orderReturns").addClass("activeParent");
+
+		// highlisght the selected item
+		$("#manageOrder").removeClass("activeSibling");
+		$("#manageOrder").addClass("active");
+	} else if (pageName == "troubleshooting-0.3.xhtml"){
+		// changing image
+		$("#ordRtrnImg").attr("src", "../../resources/ui-template-0.4/img/portal-icon-orders-selected.png");
+		// to expand list
+		$("#orderReturns").find('ul').toggle();
+		// highlighting parents (which is side line)
+		$(".orderItem").parent().parent().parent().addClass("active");
+		// highlighting siblings
+		$(".orderItem").addClass("activeSibling");
+		// highlight parent with different color
+		$(".orderReturns").addClass("activeParent");
+
+		// highlisght the selected item
+		$("#orderTrblSht").removeClass("activeSibling");
+		$("#orderTrblSht").addClass("active");
+	}/* else if (pageName == "createOrder-0.3.xhtml"){
+		// changing image
+		$("#ordRtrnImg").attr("src", "../../resources/ui-template-0.4/img/portal-icon-orders-selected.png");
+		// to expand list
+		$("#orderReturns").find('ul').toggle();
+		// highlighting parents (which is side line)
+		$(".orderItem").parent().parent().parent().addClass("active");
+		// highlighting siblings
+		$(".orderItem").addClass("activeSibling");
+		// highlight parent with different color
+		$(".orderReturns").addClass("activeParent");
+
+		// highlisght the selected item
+		$("#createOrder").removeClass("activeSibling");
+		$("#createOrder").addClass("active");
+	}*/ else if (pageName == "returnsLanding-0.3.xhtml" || pageName == "createReturnOrder-0.3.xhtml" ){
+		// changing image
+		$("#ordRtrnImg").attr("src", "../../resources/ui-template-0.4/img/portal-icon-orders-selected.png");
+		// to expand list
+		$("#orderReturns").find('ul').toggle();
+		// highlighting parents (which is side line)
+		$(".orderItem").parent().parent().parent().addClass("active");
+		// highlighting siblings
+		$(".orderItem").addClass("activeSibling");
+		// highlight parent with different color
+		$(".orderReturns").addClass("activeParent");
+
+		// highlisght the selected item
+		$("#managereturns").removeClass("activeSibling");
+		$("#managereturns").addClass("active");
+	} else if (pageName == "outboundLanding.xhtml" || pageName == "outboundDetails.xhtml" || pageName == "outboundDetailsShip.xhtml") {
+		// changing image
+		$("#ordRtrnImg").attr("src", "../../resources/ui-template-0.4/img/portal-icon-orders-selected.png");
+		// to expand list
+		$("#orderReturns").find('ul').toggle();
+		// highlighting parents (which is side line)
+		$(".orderItem").parent().parent().parent().addClass("active");
+		// highlighting siblings
+		$(".orderItem").addClass("activeSibling");
+		// highlight parent with different color
+		$(".orderReturns").addClass("activeParent");
+
+		// highlisght the selected item
+		$("#outbdprocess").removeClass("activeSibling");
+		$("#outbdprocess").addClass("active");
+	}
+	else if (pageName == "activityHistory-0.3.xhtml"){
+		// changing image
+		$("#activityImg").attr("src", "../../resources/ui-template-0.4/img/portal-icon-account-selected.png");
+		// to expand list
+		$("#activityHistory").find('ul').toggle();
+		// highlighting parents (which is side line)
+		$(".activityItem").parent().parent().parent().addClass("active");
+		// highlighting siblings
+		$(".activityItem").addClass("activeSibling");
+		// highlight parent with different color
+		$(".actHistory").addClass("activeParent");
+
+		// highlisght the selected item
+		$("#actHistory").removeClass("activeSibling");
+		$("#actHistory").addClass("active");
+	} else if (pageName == "resetPassword.xhtml"){
+		// changing image
+		$("#acntMgmtImg").attr("src", "../../resources/ui-template-0.4/img/portal-icon-account-selected.png");
+		// to expand list
+		$("#acntMgmt").find('ul').toggle();
+		// highlighting parents (which is side line)
+		$(".accountItem").parent().parent().parent().addClass("active");
+		// highlighting siblings
+		$(".accountItem").addClass("activeSibling");
+		// highlight parent with different color
+		$(".acntMgmt").addClass("activeParent");
+
+		// highlisght the selected item
+		$("#resetPwd").removeClass("activeSibling");
+		$("#resetPwd").addClass("active");
+	} else if (pageName == "manageaccounts.xhtml" || pageName == "accountdetails.xhtml"){
+		// changing image
+		$("#acntMgmtImg").attr("src", "../../resources/ui-template-0.4/img/portal-icon-account-selected.png");
+		// to expand list
+		$("#acntMgmt").find('ul').toggle();
+		// highlighting parents (which is side line)
+		$(".accountItem").parent().parent().parent().addClass("active");
+		// highlighting siblings
+		$(".accountItem").addClass("activeSibling");
+		// highlight parent with different color
+		$(".acntMgmt").addClass("activeParent");
+
+		// highlisght the selected item
+		$("#manageAcct").removeClass("activeSibling");
+		$("#manageAcct").addClass("active");
+	} else if (pageName == "manageaccountaccess.xhtml" ){
+		// changing image
+		$("#acntMgmtImg").attr("src", "../../resources/ui-template-0.4/img/portal-icon-account-selected.png");
+		// to expand list
+		$("#acntMgmt").find('ul').toggle();
+		// highlighting parents (which is side line)
+		$(".accountItem").parent().parent().parent().addClass("active");
+		// highlighting siblings
+		$(".accountItem").addClass("activeSibling");
+		// highlight parent with different color
+		$(".acntMgmt").addClass("activeParent");
+
+		// highlisght the selected item
+		$("#manageAcctAccess").removeClass("activeSibling");
+		$("#manageAcctAccess").addClass("active");
+	} 	
+	else if (pageName == "marketplaceLanding.xhtml" 
+			|| pageName==="marketPlaceRegistrationAmazon.xhtml"
+			|| pageName==="marketPlaceRegistrationEbay.xhtml"
+			|| pageName==="marketPlaceRegistration.xhtml"){
+		// changing image
+		$("#acntMgmtImg").attr("src", "../../resources/ui-template-0.4/img/portal-icon-account-selected.png");
+		// to expand list
+		$("#acntMgmt").find('ul').toggle();
+		// highlighting parents (which is side line)
+		$(".accountItem").parent().parent().parent().addClass("active");
+		// highlighting siblings
+		$(".accountItem").addClass("activeSibling");
+		// highlight parent with different color
+		$(".acntMgmt").addClass("activeParent");
+
+		// highlisght the selected item
+		$("#manageChnls").removeClass("activeSibling");
+		$("#manageChnls").addClass("active");
+	} 
+	else if(pageName=="skuManageProducts.xhtml" || pageName == "skuBulkUpload.xhtml" || pageName == "skuAddProduct.xhtml"){
+		// changing image
+		$("#accountImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-account-selected.png");
+		// to expand list
+		$("#acntMgmt").find('ul').toggle();
+		// highlighting parents (which is side line)
+		$(".accountItem").parent().parent().parent().addClass("active");
+		// highlighting siblings
+		$(".accountItem").addClass("activeSibling");
+		// highlight parent with different color
+		$(".acntMgmt").addClass("activeParent");
+		// highlisght the selected item based on the link
+		$("#skuManageProds").removeClass("activeSibling");
+		$("#skuManageProds").addClass("active");
+	}
+	else if (pageName == "bulkProductMatrix.xhtml" || pageName == "productMatrixRules.xhtml") {
+        // changing image
+		$("#accountImg").attr("src","../../resources/ui-template-0.4/img/portal-icon-account-selected.png");
+		// to expand list
+		$("#acntMgmt").find('ul').toggle();
+		// highlighting parents (which is side line)
+		$(".accountItem").parent().parent().parent().addClass("active");
+		// highlighting siblings
+		$(".accountItem").addClass("activeSibling");
+		// highlight parent with different color
+		$(".acntMgmt").addClass("activeParent");
+		// highlisght the selected item based on the link
+        $("#manageProductMatrix").removeClass("activeSibling");
+        $("#manageProductMatrix").addClass("active");
+  }
+	else if (pageName == "pickUpOverview.xhtml" || pageName == "requestPickUp.xhtml"){
+		// changing image
+		$("#pickUpImg").attr("src", "../../resources/ui-template-0.4/img/portal-icon-pickup-hover.png");
+		// to expand list
+		$("#pickUp").find('ul').toggle();
+		// highlighting parents (which is side line)
+		$(".pickUpItem").parent().parent().parent().addClass("active");
+		// highlighting siblings
+		$(".pickUpItem").addClass("activeSibling");
+		// highlight parent with different color
+		$(".pickUp").addClass("activeParent");
+
+		// highlisght the selected item
+		$("#pickUpView").removeClass("activeSibling");
+		$("#pickUpView").addClass("active");
+	} else if(pageName=="customTemplate.xhtml"){
+		// changing image
+		$("#acntMgmtImg").attr("src", "../../resources/ui-template-0.4/img/portal-icon-account-selected.png");
+		// to expand list
+		$("#acntMgmt").find('ul').toggle();
+		// highlighting parents (which is side line)
+		$(".accountItem").parent().parent().parent().addClass("active");
+		// highlighting siblings
+		$(".accountItem").addClass("activeSibling");
+		// highlight parent with different color
+		$(".acntMgmt").addClass("activeParent");
+		$("#customTemplate").removeClass("activeSibling");
+		$("#customTemplate").addClass("active");
+	}
+	else if(pageName=="locationfinder.xhtml"){
+		// changing image
+		$("#LocationFinderLink").attr("src", "../../resources/ui-template-0.4/img/loc-finder-imge-2.png");
+		$("#locFinder").find('ul').toggle();
+		//console.log('from left navigation locationfinder.xhtml');
+		// highlighting parents (which is side line)
+		$("#LocationFinderLink").addClass("active");
+	}
+	
+});

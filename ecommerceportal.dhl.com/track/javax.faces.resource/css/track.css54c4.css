@@ -1,0 +1,1346 @@
+
+@media ( max-width :767px) {
+	.col-sm-7 {
+		padding-left: 8px;
+		padding-right: 0px;
+	}
+	.col-xs-6 {
+		padding-left: 5px;
+	}
+	.col-xs-10 {
+		padding-left: 2px;
+	}
+}
+
+/* EA-2503 Unexpected unknown pseudo-class selector ":dataList_content" */
+#trackItNowForm .dataList_content {
+	border: 1px solid !important;
+	background-color: green;
+	padding: 8px 8px 8px 8px !important;
+}
+
+/*20151231 - START - INFOSYS - New CSS for customer service and FAQ*/
+/* EA-2503 Unexpected missing generic font family */
+.WhiteBackground {
+	background: white !important;
+	padding-left: 0px !important;
+	border: none !important;
+	outline: none !important;
+	color: #555555 !important;
+	font-family: 'Helvetica Neue', 'Arial', sans-serif !important;
+	font-weight: normal !important;
+	font-size: 13px !important;
+}
+
+.WhiteBackground:hover {
+	background-color: #f5f5f5 !important;
+}
+
+.WhiteBackground:active {
+	background-color: #f5f5f5 !important;
+}
+
+.AccordianTextPadding {
+	float: left !important;
+}
+
+h3 span.ui-icon {
+	display: none !important;
+}
+
+h3 span.ui-icon-triangle-1-e {
+	display: none !important;
+}
+
+.ui-accordion .ui-icon.ui-icon-triangle-1-e {
+	display: none !important;
+}
+
+.ui-accordion .ui-icon.ui-icon-triangle-1-s {
+	display: none !important;
+}
+
+.ui-accordion .ui-accordion-header .ui-icon {
+	display: none;
+	outline: none;
+}
+
+.TrackingTextArea {
+	width: 100% !important;
+	background-color: white !important;;
+	font-size: 12px !important;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	border-bottom-color: #CCCCCC !important;
+	border-bottom-left-radius: 3px !important;
+	border-bottom-right-radius: 3px !important;
+	border-left-color: #CCCCCC !important;
+	border-right-color: #CCCCCC !important;
+	border-top-color: #CCCCCC !important;
+	border-top-left-radius: 3px !important;
+	border-top-right-radius: 3px !important;
+}
+
+@media ( max-width :767px) {
+	.TrackingTextArea {
+		font-size: 10px !important;
+	}
+}
+
+/* EA-2503 Unexpected duplicate "text-align" */
+.TrackingtrackButton {
+	width: 100% !important;
+	margin-top: -10px !important;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	text-rendering: auto !important;
+	text-shadow: none !important;
+	text-transform: none !important;
+	font-stretch: normal !important;
+	vertical-align: middle !important;
+	white-space: nowrap !important;
+	letter-spacing: normal !important;
+	line-height: 23.94px !important;
+	font-variant: normal !important;
+	font-weight: 700 !important;
+	font-style: normal !important;
+	font-size: 18px !important;
+	color: #FFFFFF !important;
+	border-bottom-color: #990000 !important;
+	background-color: #D40511 !important;
+	text-align: center !important;
+	height: 37px !important;
+	border-bottom-style: solid !important;
+	border-bottom-width: 2px !important;
+	border-left-color: #990000 !important;
+	border-left-style: solid !important;
+	border-left-width: 0px !important;
+	border-right-color: #990000 !important;
+	border-right-style: solid !important;
+	border-right-width: 0px !important;
+	border-top-color: #990000 !important;
+	cursor: pointer !important;
+	display: block !important;
+	border-radius: 3px !important;
+}
+
+@media ( max-width :767px) {
+	.TrackingtrackButton {
+		font-size: 14px !important;
+	}
+}
+
+.TrackingResultsHeader {
+	color: #777777 !important;;
+	display: block !important;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font-size: 24px !important;
+	font-weight: 500 !important;
+	line-height: 26.4px !important;
+	margin-bottom: 20px !important;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	margin-top: 0px !important;
+}
+
+.TrackingNumber {
+	color: #594C4C !important;
+	cursor: auto !important;
+	font-weight: 500 !important;
+	font-size: 24px !important;
+	line-height: 26.4px !important;
+	list-style-image: none !important;
+	list-style-position: outside !important;
+	list-style-type: none !important;
+	margin-bottom: 5px !important;
+	margin-right: 0px !important;
+	margin-left: 20px !important;
+	text-align: left !important;
+}
+
+@media ( max-width :767px) {
+	.TrackingNumber {
+		font-size: 16px !important;
+	}
+}
+
+.TrackingStatus {
+	box-sizing: border-box !important;
+	cursor: auto !important;
+	display: block !important;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font-size: 24px !important;
+	font-weight: 500 !important;
+	line-height: 41.8px !important;
+	list-style-image: none !important;
+	list-style-position: outside !important;
+	list-style-type: none !important;
+	margin-bottom: 5px !important;
+	margin-left: 20px !important;
+	margin-right: 0px !important;
+	margin-top: 0px !important;
+	text-align: left !important;
+}
+
+@media ( max-width :767px) {
+	.TrackingStatus {
+		font-size: 16px !important;
+	}
+}
+
+.TrackTimeAndDate {
+	box-sizing: border-box !important;
+	color: #333333 !important;
+	cursor: auto !important;
+	display: block !important;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font-size: 14px !important;
+	line-height: 22.8571px !important;
+	list-style-image: none !important;
+	list-style-position: outside !important;
+	list-style-type: none !important;
+	margin-bottom: 5px !important;
+	margin-left: 20px !important;
+	margin-right: 0px !important;
+	margin-top: 0px !important;
+	text-align: left !important;
+	font-weight: normal !important;
+}
+
+@media ( max-width :767px) {
+	.TrackTimeAndDate {
+		font-size: 12px !important;
+	}
+}
+
+.TrackingFromTo {
+	clear: left !important;
+	box-sizing: border-box !important;
+	color: #333333 !important;
+	cursor: auto !important;
+	display: block !important;
+	float: left !important;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font-size: 12px !important;
+	font-weight: bold !important;
+	line-height: 20px !important;
+	list-style-image: none !important;
+	list-style-position: outside !important;
+	list-style-type: none !important;
+	overflow-x: hidden !important;
+	overflow-y: hidden !important;
+	text-overflow: ellipsis !important;
+	white-space: nowrap !important;
+	width: 60px !important;
+	margin-left: 20px !important;
+}
+
+@media ( max-width :767px) {
+	.TrackingFromTo {
+		font-size: 10px !important;
+		line-height: 10px !important;
+		width: 40px !important;
+	}
+}
+
+.TrackingFromData {
+	box-sizing: border-box !important;
+	color: #333333 !important;
+	cursor: auto !important;
+	display: block !important;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font-size: 12px !important;
+	line-height: 20px !important;
+	list-style-image: none !important;
+	list-style-position: outside !important;
+	list-style-type: none !important;
+	margin-left: 80px !important;
+	text-align: left !important;
+	font-weight: normal !important;
+	text-transform: uppercase !important;
+	word-wrap: break-word;
+}
+
+@media ( max-width :767px) {
+	.TrackingFromData {
+		font-size: 10px !important;
+		text-transform: none !important;
+		line-height: 10px !important;
+		margin-left: 60px !important;
+	}
+}
+
+.DivBottomBlue {
+	border-bottom-left-radius: 3px !important;
+	border-bottom-right-radius: 3px !important;
+	border-bottom-style: solid !important;
+	border-bottom-width: 2px !important;
+	border-bottom-color: #3498DB !important;
+}
+
+.DivBottomGreen {
+	border-bottom-left-radius: 3px !important;
+	border-bottom-right-radius: 3px !important;
+	border-bottom-style: solid !important;
+	border-bottom-width: 2px !important;
+	border-bottom-color: #45A546 !important;
+	box-sizing: border-box !important;
+}
+
+.DivBottomGreen:hover {
+	border-color: #45A546 !important;
+}
+
+.DivBottomRed {
+	border-bottom-left-radius: 3px !important;
+	border-bottom-right-radius: 3px !important;
+	border-bottom-style: solid !important;
+	border-bottom-width: 2px !important;
+	border-bottom-color: red !important;
+	margin-left: 10px !important;
+	box-sizing: border-box !important;
+	height: 222px !important;;
+}
+
+.DivBottomRed:hover {
+	border-color: red !important;
+}
+
+/* EA-2503 Unexpected missing generic font family */
+/* EA-2503 Unexpected duplicate "border-top-style" */
+.FAQTrackingButton {
+	background-color: #F39C12 !important;
+	border-bottom-color: #E67E22 !important;
+	border-top-right-radius: 3px !important;
+	border-top-left-radius: 3px !important;
+	border-bottom-right-radius: 3px !important;
+	border-bottom-left-radius: 3px !important;
+	height: 22px !important;
+	color: #ffffff !important;
+	font-family: 'Helvetica Neue', 'Arial', sans-serif !important;
+	font-weight: normal !important;
+	font-size: 12px !important;
+	padding-bottom: 1px !important;
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+	padding-top: 1px !important;
+	text-align: center !important;
+	text-decoration: none !important;
+	vertical-align: middle !important;
+	white-space: nowrap !important;
+	width: 90px !important;
+	line-height: 18px !important;
+	cursor: pointer !important;
+	display: inline-block !important;
+	border-bottom-style: solid !important;
+	background-origin: padding-box !important;
+	background-attachment: scroll !important;
+	border-image-width: 1 !important;
+	border-left-color: #E67E22 !important;
+	border-left-style: solid !important;
+	border-left-width: 0px !important;
+	border-right-color: #E67E22 !important;
+	border-right-style: solid !important;
+	border-right-width: 0px !important;
+	border-top-color: #E67E22 !important;
+	border-top-width: 0px !important;
+	border-top-style: solid !important;
+	margin-left: 10px !important;
+}
+
+.TrackingHeaderLine {
+	box-sizing: content-box !important;
+	border-top-style: solid !important;
+	border-top-width: 1px !important;
+	display: block !important;
+	margin-left: 10px !important;
+	margin-right: 10px !important;
+	margin-top: 12px !important;
+	line-height: 18.5714px !important;
+	height: 0px !important;
+	border-left-color: #333333 !important;
+	border-left-style: none !important;
+	border-left-width: 0px !important;
+	border-right-color: #333333 !important;
+	border-top-color: #C4C4C4 !important;
+	color: #969696 !important;
+}
+
+/* EA-2503 Unexpected missing generic font family */
+/* EA-2503 Unexpected duplicate "font-family" */
+.TrackingH4Heading {
+	font-size: 18px !important;
+	padding-top: 5px !important;
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+	margin-left: 10px !important;
+/*	font-family: inherit !important; */
+	font-weight: 500 !important;
+	line-height: 1.1 !important;
+	box-sizing: border-box !important;
+	font-family: 'Helvetica Neue', 'Arial Bold', 'Arial', sans-serif !important;
+	color: #515151 !important;
+}
+
+/* EA-2503 Unexpected missing generic font family */
+.TrackingCustomerHeading {
+	box-sizing: border-box;
+	display: block;
+	font-size: 18px !important;
+	font-weight: 500 !important;
+	line-height: 1.1 !important;
+	font-family: 'Helvetica Neue', 'Arial Bold', 'Arial', sans-serif !important;
+	color: #515151 !important;
+	padding-top: 5px !important;
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+.TrackingDropdownCountry {
+	color: #969696 !important;
+	cursor: pointer !important;
+	display: block !important;
+	float: left !important;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font-size: 14px !important;
+	margin-left: 10px !important;
+	vertical-align: middle !important;
+	margin-bottom: 10px !important;;
+}
+
+.TrackingImage {
+	float: right;
+	vertical-align: middle;
+	margin-top: 12px;
+	margin-right: 12px;
+}
+
+/*20151231 - END - INFOSYS - New CSS for customer service and FAQ*/
+/*RTC-143170 Infosys Start*/
+.modal-dialog {
+	padding-top: 50px !important;
+}
+
+/*RTC-143170 Infosys End*/
+.fixed-dropdown.ui-selectonemenu-panel .ui-selectonemenu-list-item {
+	white-space: normal !important;
+	word-wrap: break-word !important;
+	width: 165px !important;
+}
+
+.fixed-dropdown .ui-selectonemenu-panel .ui-selectonemenu-items-wrapper {
+	width: 165px !important;
+}
+
+/* Internal tracking page CSS */
+/* <!-- Defect-169980 Start--> */
+.holCountryDropdown.ui-selectonemenu-panel {
+	width: 133px !important; 
+}
+
+.holCountryDropdown.ui-selectonemenu-panel .ui-selectonemenu-list-item {
+	white-space: normal !important;
+	word-wrap: break-word !important;
+}
+
+/* <!-- START RTC:136212-Aishwarya [Display of Public Holidays at Internal Tracking Page]	 --> */
+.holidayStyleClass .ui-datatable thead th, .ui-datatable tbody td, .ui-datatable tfoot td{
+	padding: 0px 3px !important;
+}
+
+.holidayStyleClass .ui-datatable-tablewrapper{
+    padding: 0px 2px 0px 2px !important;
+}
+
+.holidayStyleClass .hideHeader .ui-datatable .ui-paginator, .ui-datatable .ui-paginator{
+	height: 30px !important;
+}
+
+/* EA-2503 Unexpected duplicate "font-weight" */
+.holidayStyleClass .ui-datatable thead th{
+	font-size:14px !important;
+	margin-left:3px !important;
+	white-space:nowrap !important;
+	padding:0px !important;
+/*	font-weight:normal !important; */
+	color:#666666 !important;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font-weight:bold !important;
+	background:none !important;
+}
+
+.holidayStyleClass .ui-panelgrid .ui-panelgrid-cell{
+	padding: 2px 10px 0px 10px !important;
+}
+
+/* <!-- END RTC:136212-Aishwarya [Display of Public Holidays at Internal Tracking Page]	 --> */
+.hideHeader .ui-datatable .ui-paginator, .ui-datatable .ui-paginator{
+	padding: 0px !important;
+}
+
+.hideHeader .ui-datatable-tablewrapper{
+    padding: 4px 2px 0px 2px !important;
+}
+
+.hideHeader thead {
+	display: none !important;
+}
+
+.hideHeader thead th, .hideHeader tbody td, .hideHeader tfoot td{
+	border-top: 0px !important; 
+	padding: 3.5px 10px !important;
+}
+
+.ui-tabs-outline{
+	outline: none !important;
+}
+
+.ShipmentDetails {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font-size: 12px !important;
+	color: #333333 !important;
+	margin-bottom: unset;
+}
+
+/* <!-- RTC-119872-End --> */
+dialog .ui-dialog-titlebar {
+    padding: 0px !important;
+}
+
+.ui-tabs .ui-tabs-panel {
+    padding: 0px !important;
+}
+
+.ui-paginator .ui-paginator-pages{
+	padding: 8px 0px !important;
+}
+
+.datatable-15-margin-left table {
+    margin-left: 0px  !important;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+    color: #4f4f4f !important; 
+}
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+	color: #0099CC !important;
+}
+
+.ui-tabs .ui-tabs-nav li {
+	margin: 0px !important;
+}
+
+.ui-tabs .ui-tabs-nav {
+	background: none !important;
+}
+
+.ui-tabs .ui-tabs-nav li {
+    border-left: none  !important;
+    border-right: none  !important;
+    border-top: none  !important;
+    border-bottom: none !important;
+}
+
+.ui-widget-header {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+    
+.datatable-97-width table {
+     width: 100% !important;
+}
+   
+.table-border .ui-paginator-page {
+    padding: 1px 4px !important;
+}
+
+.table-border .ui-paginator-first, .table-border .ui-paginator-last, .table-border .ui-paginator-prev, .table-border .ui-paginator-next{
+	padding: 1px 3px !important;
+}
+
+.ui-paginator-bottom {
+    display: block !important;
+}
+
+.ui-datatable .ui-datatable-header {
+    padding:0px 0px !important;
+}
+    
+.ui-widget-header {
+	background: white !important;
+}
+
+.table-border .ui-datatable-tablewrapper {
+	border: 0px !important;
+}
+
+.table-border .ui-datatable-odd:hover, .ui-datatable-even:hover {
+	background: none !important;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+    padding: .5em 0.8em !important;
+}
+
+/*RTC-143170 Infosys End*/
+.col-xs-3 {
+    width: auto;
+}
+
+#dialogForm\3A panelIdTwo td {
+	padding: 2px 6px !important;
+}
+
+.ui-chkbox .ui-chkbox-label {
+	display: inline;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    padding: 0px !important;
+}
+
+.ui-dialog .ui-dialog-content {
+    padding: 1em !important;
+}
+
+.ui-dialog .ui-dialog-titlebar-close:hover{
+	float: right !important;
+    margin: 0px !important;
+    top: 0px !important;
+    padding: 1px !important;
+    cursor: pointer !important;
+    border: none !important;
+	box-shadow:0px 0px 0px black !important;
+	font-weight:normal !important;
+}
+
+.timeline-start {
+	width: 10px;
+	height: 10px;
+	background: white;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	border: 2px solid #45A546;
+	margin-left: 54px;
+}
+
+.timeline-pointer {
+	box-sizing: border-box;
+	color: #333333;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	height: 12px;
+	left: -6px;
+	line-height: 20px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	position: absolute;
+	text-align: left;
+	top: 10px;
+	width: 6px;
+	border-bottom-color: transparent;
+	border-bottom-style: solid;
+	border-bottom-width: 6px;
+	border-right-color: #45a546;
+	border-right-style: solid;
+	border-right-width: 6px;
+	border-top-color: transparent;
+	border-top-style: solid;
+	border-top-width: 6px;
+}
+
+@media ( max-width :767px) {
+	.timeline-pointer {
+		font-size: 12px !important;
+	}
+}
+
+.timeline-unit {
+	background-color: #ffffff;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-color: #45A546;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-left-color: #45A546;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #45A546;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #45A546;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	clear: none;
+	color: #333333;
+	content: normal;
+	display: block;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin-left: 77px;
+	position: relative;
+}
+
+@media ( max-width :767px) {
+	.timeline-unit {
+		font-size: 12px !important;
+	}
+}
+
+.timeline-location {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #45A546;
+	background-image: none;
+	background-origin: padding-box;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-repeat: repeat;
+	background-size: auto;
+	border-bottom-left-radius: 2px;
+	border-right-color: #45A546;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-left-radius: 2px;
+	color: #ffffff;
+	display: table-cell;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 700;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+}
+
+@media ( max-width :767px) {
+	.timeline-location {
+		font-size: 12px !important;
+	}
+}
+
+.timeline-description {
+	box-sizing: border-box;
+	color: #45A546;
+	display: table-cell;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font-size: 18px !important;
+	font-weight: 400 !important;
+	line-height: 25.71px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+}
+
+.timeline-description label {
+	vertical-align:middle;
+}
+.timeline-location  label {
+	vertical-align:top;
+}
+@media ( max-width :767px) {
+	.timeline-description {
+		font-size: 14px !important;
+	}
+}
+
+.timeline-location timeline-location-responsive {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: transparent;
+	background-image: none;
+	background-origin: padding-box;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-repeat: repeat;
+	background-size: auto;
+	border-bottom-left-radius: 2px;
+	border-right-color: #45A546;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-left-radius: 2px;
+	box-sizing: border-box;
+	color: #333333;
+	display: none;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 20px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+}
+
+.timeline-hd {
+	box-sizing: border-box;
+	color: #594E4D;
+	float: right;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 33px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 12px;
+}
+
+@media ( max-width :767px) {
+	.timeline-hd {
+		font-size: 20px !important;
+	}
+}
+
+.timeline-delivered {
+	box-sizing: border-box;
+	clear: none;
+	color: #333333;
+	content: normal;
+	display: block;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	list-style-position: outside;
+	list-style-type: none;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	position: relative;
+}
+
+@media ( max-width :767px) {
+	.timeline-delivered {
+		font-size: 12px !important;
+	}
+}
+
+.timeline-spine {
+	background-color: #45A546;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	box-sizing: border-box;
+	color: #333333;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	height: 100%;
+	left: 57px;
+	line-height: 20px;
+	list-style-position: outside;
+	list-style-type: none;
+	margin-bottom: 15px;
+	position: absolute;
+	width: 4px;
+	z-index: 1;
+}
+
+@media ( max-width :767px) {
+	.timeline-spine {
+		font-size: 12px !important;
+	}
+}
+
+.timelineDate {
+	background-color: #594F4E;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-width: 0px;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-top-width: 0px;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	float: none;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	list-style-position: outside;
+	list-style-type: none;
+	margin-bottom: 15px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 20px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 3px;
+	position: relative;
+	text-align: center;
+	width: 115px;
+	z-index: 2;
+}
+
+@media ( max-width :767px) {
+	.timelineDate {
+		font-size: 12px !important;
+	}
+}
+
+.Timeline-event {
+	box-sizing: border-box;
+	color: #333333;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	list-style-position: outside;
+	list-style-type: none;
+	margin-bottom: 15px;
+	position: relative;
+	z-index: 2;
+}
+
+@media ( max-width :767px) {
+	.Timeline-event {
+		font-size: 12px !important;
+	}
+}
+
+.timelineTime {
+	box-sizing: border-box;
+	color: #45A546;
+	float: left;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	list-style-position: outside;
+	list-style-type: none;
+	padding-top: 5px;
+	text-align: right;
+	width: 48px;
+}
+
+@media ( max-width :767px) {
+	.timelineTime {
+		font-size: 10px !important;
+	}
+}
+
+.emClass {
+	box-sizing: border-box;
+	color: #45A546;
+	display: block;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-style: normal !important;
+	font-weight: Bold !important;
+	line-height: 14px;
+	list-style-position: outside;
+	list-style-type: none;
+	text-align: right;
+}
+
+@media ( max-width :767px) {
+	.emClass {
+		font-size: 12px !important;
+	}
+}
+
+.timelineDot {
+	background-color: #45A546;
+	border-bottom-color: #F3F3F3;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-left-color: #F3F3F3;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-right-color: #F3F3F3;
+	border-right-style: solid;
+	border-right-width: 2px;
+	border-top-color: #F3F3F3;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-top-style: solid;
+	border-top-width: 2px;
+	box-sizing: border-box;
+	color: #333333;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	height: 12px;
+	left: 53px;
+	line-height: 20px;
+	position: absolute;
+	top: 10px;
+	width: 12px;
+	list-style-position: outside;
+	list-style-type: none;
+}
+
+@media ( max-width :767px) {
+	.timelineDot {
+		font-size: 12px !important;
+	}
+}
+
+.TrackStatus {
+	box-sizing: border-box !important;
+	cursor: auto !important;
+	display: block !important;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font-size: 24px !important;
+	font-weight: 500 !important;
+	line-height: 41.8px !important;
+	list-style-image: none !important;
+	list-style-position: outside !important;
+	list-style-type: none !important;
+	margin-bottom: 5px !important;
+	margin-left: 20px !important;
+	margin-right: 0px !important;
+	margin-top: 0px !important;
+	text-align: left !important;
+}
+
+@media ( max-width :767px) {
+	.TrackStatus {
+		font-size: 16px !important;
+	}
+}
+
+.track-number-heading {
+	box-sizing: border-box;
+	color: #594C4C;
+	display: block;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	margin: 0px;
+	line-height: 1.3em;
+	word-wrap: break-word !important;
+}
+
+.track-number-heading-email {
+	box-sizing: border-box !important;
+	color: #594C4C !important;
+	display: inline-block !important;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font-size: 24px !important;
+	font-weight: 500 !important;
+	line-height: 40px !important;
+	margin-bottom: -10px !important;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	margin-top: -10px !important;
+}
+
+@media ( max-width :767px) {
+	.track-number-heading {
+		font-size: 16px !important;
+	}
+}
+
+#messages .ui-messages-info{
+	margin: 0px 0px !important;
+	margin-right: 10px !important;
+}
+
+#messages .ui-messages-error-summary {
+	margin-left: 0px !important;
+	margin-bottom: 10px !important;
+}
+
+.ui-messages-error-summary {
+	margin-left: 0px !important;
+	word-wrap: break-word;
+ }
+
+.labelActivity {
+	box-sizing: border-box !important;
+	color: #594E4D !important;
+	display: block !important;
+	float: right !important;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font-size: 24px !important;
+	font-weight: 500 !important;
+	line-height: 33px !important;
+	margin-top: 12px !important;
+	margin-left: -20px !important;
+}
+
+.NoticePosting {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font-weight: bold;
+	height: 25px;
+	font-size: 11px !important;
+	color: #333333 !important;
+	background-color: #F1F1F1 !important;
+	border: none !important;
+	border-radius: 3px !important;
+	text-transform: uppercase;
+}
+
+.NoticePosting:HOVER {
+	background-color: #DBDBDB !important;
+}
+
+/* EA-2503 Unexpected missing generic font family */
+td.custom-td {
+	font-family: 'Arial Regular', 'Arial', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px;
+	color: #333333;
+	line-height: 20px;
+	vertical-align: top !important;
+}
+
+/* EA-2503 Unexpected missing generic font family */
+/*Defect-165760 Infosys Start*/
+.moreLinkDetails {
+	font-family: 'Delivery Cd Light', sans-serif;
+	font-weight: 300 !important;
+	font-style: normal;
+	font-size: 15px !important;
+	color: #666666;
+}
+
+/* EA-2503 Unexpected missing generic font family */
+.moreLinkColumnData {
+    font-family: 'Arial Regular', 'Arial', sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    font-size: 13px !important;
+    color: #333333 !important;
+    line-height: 20px !important;
+    vertical-align: top !important;
+}
+
+.ui-datatable.content2 thead th, .ui-datatable.content2 tbody td, .ui-datatable.content2 tfoot td {
+	padding:0px 0px !important;
+	vertical-align:top !important;
+}
+
+/*Defect-165760 Infosys End*/
+.currencyData {
+	padding-left:0px !important;
+}
+
+.faqAccordionClass.ui-accordion .ui-accordion-content {
+	margin-bottom: -20px !important;
+}
+
+.ui-accordion .ui-accordion-header {
+	background-color:#fff;
+	padding: 0em;
+	line-height:30px;
+}
+
+.TrackingButtonWrapper .ui-panel-content {
+	padding: 0px !important;
+}
+.masterLabel {
+	box-sizing: border-box !important;
+	color: #333333 !important;
+	cursor: auto !important;
+	display: block !important;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	font-size: 14px !important;
+	line-height: 22.8571px !important;
+	list-style-image: none !important;
+	list-style-position: outside !important;
+	list-style-type: none !important;
+	margin-bottom: 5px !important;
+	margin-left: 20px !important;
+	margin-right: 0px !important;
+	margin-top: 0px !important;
+	text-align: left !important;
+	font-weight: normal !important;
+}
+.countryImg {
+	width: 186px !important; 
+	left: 2px !important; 
+	padding-left: 2px !important; 
+	padding-top: 13px !important;
+	height:120px !important;
+}
+#myModal {
+	left:25% !important;
+}
+
+@media ( max-width :767px) {
+	.masterLabel {
+		font-size: 12px !important;
+	}
+	
+	.countryImg {
+		width: 100px !important; 
+		left: 2px !important; 
+		padding-left: 2px !important; 
+		padding-top: 13px !important;
+		height:60px !important;
+	}
+	
+	#myModal {
+		left:0% !important;
+	}
+}
+
+.verticalLine {
+	border-left: 2px grey solid;
+   	width:5px !important;
+    height: 2em !important;
+}
+
+.ui-selectonemenu-panel .ui-selectonemenu-items-wrapper {
+	overflow: auto !important;
+	overflow-x: hidden !important;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .master-dropdown.ui-selectonemenu-panel .ui-selectonemenu-list-item {
+	padding-right: 1em !important;
+} 
+}
+
+
+.trackDataGrid.ui-panel .ui-panel-content {
+	padding:0px 0px 4px !important;
+}
+
+@media (max-width :767px) {
+	.responsive-table>tbody>tr>td {
+		display: block;
+	}
+}
+
+/* EA-2503 Unexpected missing generic font family */	
+.trackEDDLabel {
+	font-size:18px !important;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+	color: black !important;
+	font-weight: normal !important;
+}
+
+/* EA-2503 Unexpected missing generic font family */
+.trackEDD {
+	font-size:22px !important;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+	font-weight: normal !important;
+	color: black !important;
+}
+.hoverCss:hover {
+	color:#d40511 !important;
+}
+
+/*[CY][294131]*/
+@media only screen and (max-width: 480px) {
+	#header {padding-right: 0 !important;}
+	td {
+		padding: 0 !important;
+    	margin: 0 !important;
+    }
+    .DivBottomBlue {
+    	margin: 5px;
+    }
+    .FAQTrackingButton {
+    	margin-left:10px !important;
+    }
+    td#faqBox {
+    width: 100% !important;
+    }
+    td#trackBox {
+    width: 100% !important;
+    }
+    h3.track-number-heading {
+    text-align: center;
+    }
+    .TrackingImage{
+    	position: relative;
+    	bottom: 70px;
+    }
+    td#errorBox{
+    	width: 100%;
+    }
+	div#emailNotif {
+    	margin: 0 5px;
+	}
+	.col-xs-6 {
+    bottom: 10px;
+	}
+	.TrackingH4Heading{
+		margin-left: 13px !important;
+	}
+	.DivBottomGreen{
+    margin: 5px !important;
+	}
+	.DivBottomRed{ 
+    margin: 5px !important;
+	}
+	.TrackingResultsHeader{
+    text-align: center;
+	}
+	.ui-panelgrid {
+    margin-left: 20px;
+    width: auto !important;
+	}
+}
+
+/* EA-2503 Unexpected duplicate "text-align" */
+.TrackingExportButton {
+	width: 55% !important;
+	margin-left: 175px !important;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+	text-rendering: auto !important;
+	text-shadow: none !important;
+	text-transform: none !important;
+	font-stretch: normal !important;
+	vertical-align: middle !important;
+	white-space: nowrap !important;
+	letter-spacing: normal !important;
+	line-height: 23.94px !important;
+	font-variant: normal !important;
+	font-weight: 700 !important;
+	font-style: normal !important;
+	font-size: 18px !important;
+	color: #FFFFFF !important;
+	border-bottom-color: #990000 !important;
+	background-color: #D40511 !important;
+	text-align: center !important;
+	height: 37px !important;
+	border-bottom-style: solid !important;
+	border-bottom-width: 2px !important;
+	border-left-color: #990000 !important;
+	border-left-style: solid !important;
+	border-left-width: 0px !important;
+	border-right-color: #990000 !important;
+	border-right-style: solid !important;
+	border-right-width: 0px !important;
+	border-top-color: #990000 !important;
+	cursor: pointer !important;
+	display: block !important;
+	border-radius: 3px !important;
+}
+
+@media ( max-width :767px) {
+	.TrackingExportButton {
+		font-size: 14px !important;
+	}
+}
+

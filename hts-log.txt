@@ -1,0 +1,19 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 16 Jun 2025 12:08:01 at https://ecommerceportal.dhl.com/track/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://ecommerceportal.dhl.com/track/ -O1 "C:\Users\HP\Documents\File\WEBSITE\LHD01" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:08:03	Warning: 	Moved Temporarily for https://ecommerceportal.dhl.com/track/
+12:08:03	Warning: 	File has moved from https://ecommerceportal.dhl.com/track/ to https://ecommerceportal.dhl.com/track/pages/customer/trackItNowPublic.xhtml
+12:08:53	Error: 	"Not Found" (404) at link https://ecommerceportal.dhl.com/track/javax.faces.resource/fonts/fontawesome-webfont.eot?v=4.2.0 (from https://ecommerceportal.dhl.com/track/javax.faces.resource/css/font-awesome.min.css.xhtml?ln=ui-template-0.4&version=9.2.0)
+12:08:53	Error: 	"Not Found" (404) at link https://ecommerceportal.dhl.com/track/javax.faces.resource/fonts/fontawesome-webfont.eot? (from https://ecommerceportal.dhl.com/track/javax.faces.resource/css/font-awesome.min.css.xhtml?ln=ui-template-0.4&version=9.2.0)
+12:08:53	Error: 	"Not Found" (404) at link https://ecommerceportal.dhl.com/track/javax.faces.resource/fonts/fontawesome-webfont.woff?v=4.2.0 (from https://ecommerceportal.dhl.com/track/javax.faces.resource/css/font-awesome.min.css.xhtml?ln=ui-template-0.4&version=9.2.0)
+12:08:53	Error: 	"Not Found" (404) at link https://ecommerceportal.dhl.com/track/javax.faces.resource/fonts/fontawesome-webfont.ttf?v=4.2.0 (from https://ecommerceportal.dhl.com/track/javax.faces.resource/css/font-awesome.min.css.xhtml?ln=ui-template-0.4&version=9.2.0)
+12:08:53	Error: 	"Not Found" (404) at link https://ecommerceportal.dhl.com/track/javax.faces.resource/fonts/fontawesome-webfont.svg?v=4.2.0 (from https://ecommerceportal.dhl.com/track/javax.faces.resource/css/font-awesome.min.css.xhtml?ln=ui-template-0.4&version=9.2.0)
+12:08:56	Error: 	"Not Found" (404) at link https://ecommerceportal.dhl.com/track/resources/ui-template-0.4/img/ui-0.2/img/icon_next.png (from https://ecommerceportal.dhl.com/track/javax.faces.resource/css/portal.css.xhtml?ln=ui-template-0.4&version=9.2.0)
+
+HTTrack Website Copier/3.49-2 mirror complete in 58 seconds : 83 links scanned, 75 files written (3893581 bytes overall) [1212889 bytes received at 20911 bytes/sec], 3528548 bytes transferred using HTTP compression in 26 files, ratio 21%, 11.8 requests per connection
+(6 errors, 2 warnings, 0 messages)

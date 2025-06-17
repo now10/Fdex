@@ -1,0 +1,283 @@
+@font-face {
+	font-family: "Delivery";
+	src:
+		url("../../resources/ui-template-0.4/Fonts-Delivery/EOT/Delivery_W_Bdd41d.eot?#iefix");
+	src:
+		url("../../resources/ui-template-0.4/Fonts-Delivery/EOT/Delivery_W_Bdd41d.eot?#iefix")
+		format("eot"),
+		url("../../resources/ui-template-0.4/Fonts-Delivery/WOFF2/Delivery_W_Bd.woff2")
+		format("woff2"),
+		url("../../resources/ui-template-0.4/Fonts-Delivery/WOFF/Delivery_W_Bd.woff")
+		format("woff"),
+		url("../../resources/ui-template-0.4/Fonts-Delivery/TTF/Delivery_Bd.ttf")
+		format("truetype"),
+		url("../../resources/ui-template-0.4/Fonts-Delivery/SVG/Delivery_W_Bd.svg")
+		format("svg");
+}
+
+/*************** Font Ends **********************/
+.epflogin-loginbox {
+	width: 320px;
+    min-height: 252px;
+    background-color: #ffcc00;
+    padding: 13px;
+    margin-right:75px !important;
+    float:right !important;
+   
+}
+
+.Login-font{
+	font-size:16px;
+	font-weight:600;
+}
+.epflogin-SysMaintanance {
+	width:100%;
+	display:block;
+	clear:right !important;
+	margin-right: 75px !important;
+	float:right !important;
+
+}
+.epflogin-SysMaintanancebox{
+
+	width: 320px;
+    height: auto;
+    background-color: #dbdbdb;
+    padding:13px;
+    margin-top: 12px;
+	clear:right !important;
+	float:right !important;
+	
+}
+
+/* EA-2503 Unexpected missing generic font family */
+.epflogin-SysMaintanancebox p{
+  font-family:'Delivery', sans-serif !important;
+  font-size:14px;
+  color:#333333!important;
+  text-align:justify!important;
+  line-height:normal!important;
+
+}   
+.epflogin-SysMaintanancebox-txt{
+
+	margin-top: 5px !important;
+	font-size:12px !important;
+}
+
+/* EA-2503 Unexpected missing generic font family */
+.epflogin-SysMaintanancebox h5{
+	font-family:'Delivery', sans-serif !important;
+	font-size:14px;
+	font-weight:600;
+	margin-top: 2px!important;
+    margin-bottom: 2px!important;
+	padding-left: 15px!important;
+    padding-right: 14px!important;
+}
+
+.btn-group{
+
+	    margin-left: 24px;
+	    margin-right:20px !important;
+}
+
+.btn {
+    padding: 1px 11px!important;
+    border-radius: 0px!important;
+     }
+.btn-color-custom {
+    background-color: #f2f2ed!important;
+    border-left: none!important;	
+}    
+
+.input-lg {
+    height: 38px!important;
+    font-size: 13px!important;
+    border-radius: 0px!important;
+}
+
+.form-control{
+	border-radius: 0px!important;
+}
+
+
+.btn-login{
+	display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0px!important;
+	background-color: #d40511!important;
+}
+.btn-group-lg>.btn, .btn-lg {
+    border-radius: 0px!important;
+}
+
+.form-group a {
+    color:#d40511!important;
+}
+
+.form-group a:hover {
+    text-decoration: none!important;
+}
+
+.icon-map-marker{
+	width:18px;
+	height:18px;
+	margin-top:-3px;
+}
+
+.icon-map-marker-login{
+	width:18px;
+	height:18px;
+	margin-top:-3px;
+
+}
+
+.icon-loc-finder {
+	width: 22px;
+	height: 22px;
+	margin-top: -3px;
+}
+
+.tracker-lang{
+    color:#d40511;
+    line-height: 15px;
+    width: 442px;
+}
+
+.tracker-lang a {
+    color:#d40511!important;
+   margin-top:12px !important;
+}
+
+.tracker-lang a:hover {
+    text-decoration: none!important;
+}
+
+/* EA-2503 Unexpected missing generic font family */
+.full {
+    background-size: cover !important;
+    overflow: auto;
+    background-repeat: no-repeat;
+}body {
+	background: none !important;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0px;
+    font-family: 'Delivery', sans-serif;
+  	display:block;
+  	min-height:620px !important;
+  	width:100% !important;
+} 
+
+
+
+body .main {
+    background: none !important;
+}
+
+.main {
+    z-index: 2;
+    display: block;
+    box-sizing: border-box;
+    
+}
+
+/* EA-2503 Unexpected missing generic font family */
+#header {
+	font-family: 'Delivery', sans-serif;
+	font-style: normal;
+    font-weight: 400;
+    background-color: transparent;
+    padding-left: 25px;
+    border-width: 0px;
+    position: relative;
+    overflow: hidden;
+}
+#header * {
+    box-sizing: border-box;
+}
+
+#content * {
+    box-sizing: border-box;
+}
+
+.login-header {
+	border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: #807059;
+} 
+
+#header img#logo {
+    float: left;
+}
+
+img {
+    border: none;
+    background-color: transparent;
+}
+
+#header div#language-dropdown {
+    margin-top: -5px;
+    float:right;
+    width:250px;
+} 
+
+.headerLink{
+ display: inline-block;
+} 
+
+#footer {
+height:40px !important;
+background: -moz-linear-gradient(top,  rgba(255,255,255,0.97) 0%, rgba(255,255,255,0.26) 59%, rgba(255,255,255,0) 81%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0.97) 0%,rgba(255,255,255,0.26) 59%,rgba(255,255,255,0) 81%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,0.97) 0%,rgba(255,255,255,0.26) 59%,rgba(255,255,255,0) 81%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */  
+margin: 0px 70px !important;
+
+}
+.banner-cookie {
+	background-color: #c00;
+	box-shadow: 1px 1px 5px #666;
+	color: #fff;
+	font-size: 12px;
+	padding: 0.75em 20px 0.5em;
+	text-align: left;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+	}
+
+.banner-header-background {
+	min-height: 50px;
+	margin: 0px 70px;
+}
+
+/*[CY][294131]*/
+@media only screen and (max-width: 480px) {
+	#header div#language-dropdown {
+		white-space: nowrap;
+		float: left;
+	}
+	#footer {margin:0 !important;}
+	td#faqBox {
+    width: 100% !important;
+    }
+    td#trackBox {
+    width: 100% !important;
+    }
+}

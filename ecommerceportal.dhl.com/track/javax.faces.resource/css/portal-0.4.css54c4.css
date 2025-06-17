@@ -1,0 +1,1898 @@
+/* @import
+	url(https://fast.fonts.net/cssapi/b865d3c9-28ce-4b2f-b09c-841a89b62f00.css)
+	;
+ */
+/* @import url("https://fast.fonts.net/cssapi/b865d3c9-28ce-4b2f-b09c-841a89b62f00.css"); */
+
+@font-face {
+	font-family: "Delivery";
+	src:
+		url("../../resources/ui-template-0.4/Fonts-Delivery/EOT/Delivery_W_Bdd41d.eot?#iefix");
+	src:
+		url("../../resources/ui-template-0.4/Fonts-Delivery/EOT/Delivery_W_Bdd41d.eot?#iefix")
+		format("eot"),
+		url("../../resources/ui-template-0.4/Fonts-Delivery/WOFF2/Delivery_W_Bd.woff2")
+		format("woff2"),
+		url("../../resources/ui-template-0.4/Fonts-Delivery/WOFF/Delivery_W_Bd.woff")
+		format("woff"),
+		url("../../resources/ui-template-0.4/Fonts-Delivery/TTF/Delivery_Bd.ttf")
+		format("truetype"),
+		url("../../resources/ui-template-0.4/Fonts-Delivery/SVG/Delivery_W_Bd.svg")
+		format("svg");
+}
+
+@font-face {
+	font-family: "Delivery Cd Light";
+	src:
+		url("../../resources/ui-template-0.4/Fonts-Delivery/EOT/Delivery_W_CdLtd41d.eot?#iefix");
+	src:
+		url("../../resources/ui-template-0.4/Fonts-Delivery/EOT/Delivery_W_CdLtd41d.eot?#iefix")
+		format("eot"),
+		url("../../resources/ui-template-0.4/Fonts-Delivery/WOFF2/Delivery_W_CdLt.woff2")
+		format("woff2"),
+		url("../../resources/ui-template-0.4/Fonts-Delivery/WOFF/Delivery_W_CdLt.woff")
+		format("woff"),
+		url("../../resources/ui-template-0.4/Fonts-Delivery/TTF/Delivery_CdLt.ttf")
+		format("truetype"),
+		url("../../resources/ui-template-0.4/Fonts-Delivery/SVG/Delivery_W_CdLt.svg")
+		format("svg");
+}
+
+/*************** Font Ends **********************/
+body {
+	font-family: 'Delivery';
+	padding-bottom: 60px;
+}
+
+.ui-widget {
+	font-family: 'Delivery' !important;
+}
+
+.right-content {
+	width: 98%;
+	height: auto;
+	margin-left: 10px;
+}
+
+.top-nav {
+	height: 60px;
+}
+
+.right-content_header {
+	width: 96%;
+	float: left;
+}
+
+.right-content-body {
+	width: 96%;
+	height: auto !important;
+}
+
+.right-content-area {
+	width: 100%;
+}
+
+.pageHeader {
+	font-size: 30px;
+	color: #31353B;
+	margin: 0px;
+	font-weight: 500;
+}
+
+.pagesubheader {
+	font-family: 'Delivery' !important;
+	font-size: 20px !important;
+	color: #666666;
+	text-align: left;
+	line-height: normal;
+	font-weight: 500;
+	font-style: normal;
+	border-bottom: 1px solid #E4E4E4;
+	width: 100%;
+}
+
+.pagesubheader-withoutline {
+	font-family: 'Delivery' !important;
+	font-size: 20px !important;;
+	color: #666666;
+	text-align: left;
+	line-height: normal;
+	font-weight: 500;
+	font-style: normal;
+	width: 100%;
+}
+
+.pagesubheader-withoutline1 {
+	font-family: 'Delivery' !important;
+	font-size: 15px !important;;
+	color: #666666;
+	text-align: left;
+	line-height: normal;
+	font-weight: 500;
+	font-style: normal;
+	width: 100%;
+}
+
+.notopbottomborder.ui-panelgrid>*>tr, .notopbottomborder.ui-panelgrid .ui-panelgrid-cell
+	{
+	border: none;
+	border-bottom: 0px;
+	border-top: none;
+	border-top: 0px;
+}
+
+.pagesubheader-strongline {
+	font-family: 'Delivery' !important;
+	font-size: 20px !important;
+	color: #666666;
+	text-align: left;
+	line-height: normal;
+	font-weight: 500;
+	font-style: normal;
+	border-bottom: 2px solid #E4E4E4;
+	width: 100%;
+}
+
+.strongline {
+	height: 2px;
+	border-bottom: 2px solid #E4E4E4;
+	width: 100%;
+}
+
+/* .pageheader {
+  position: absolute;
+left: 0px;
+top: 5px;
+width: 1050px;
+height: 1px;
+color: #333;
+text-align: center;
+line-height: normal;
+} */
+.outputValue {
+	font-style: normal;
+	font-size: 12px !important;
+	color: #333 !important;
+	font-weight: bold !important;
+}
+
+button.addConnection_btn {
+	background-color: #666666;
+	color: #fff;
+	font-weight: normal;
+	width: 165px;
+	height: 30px;
+	text-align: center;
+}
+
+button.btnSubmit.ui-state-default {
+	background: #D40511;
+	color: #fff;
+	padding-right: 3px;
+	font-weight: normal;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align: center;
+	width: 90px;
+	height: 30px;
+}
+
+button.btnCancel.ui-state-default {
+	background: #666666;
+	color: #fff;
+	padding-right: 3px;
+	font-weight: normal;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-align: center;
+	width: 90px;
+	height: 30px;
+}
+
+.choose-file {
+	width: 140px;
+	font-size: 12px;
+}
+
+.choose-file-button label {
+	padding-top: 0px !important;
+}
+
+.choose-file .ui-widget-header {
+	background: none !important;
+	filter: none !important;
+	position: relative;
+	top: 11px;
+	width: 130px;
+	height: 37px;
+}
+
+.choose-file .ui-state-default {
+	background: #F7F7F7;
+	color: #000;
+	padding-right: 10px;
+	font-weight: bold;
+	width: 130px;
+	height: 37px;
+}
+
+.choose-file .ui-state-hover {
+	background: #F7F7F7;
+	color: #000;
+	box-shadow: none !important;
+	padding-right: 10px;
+	font-weight: bold;
+	width: 130px;
+	height: 37px;
+}
+
+.choose-file .ui-icon-plusthick {
+	display: none !important;
+}
+
+.choose-file-button .ui-state-default {
+	margin-top: -15px !important;
+}
+
+.panelArea {
+	width: 100%;
+	margin: 20px 20px 20px 0px;
+	height: auto !important;
+}
+
+.pannelSubHeading {
+	/* font-size: 17px;
+	color: #666666;
+	font-weight: bold; */
+	font-family: 'Delivery' !important;
+	font-size: 17px !important;
+	color: #666666;
+	text-align: left;
+	line-height: normal;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.rounded-corner {
+	border: none !important;
+	border-radius: 5px !important;
+}
+
+/* .rounded-corner-without-border {
+	border: 0px !important;
+	border-radius: 5px !important;
+} */
+.light-gray-background {
+	background: #FCFCFC;
+	border: 1px solid #D7D7D7 !important;
+	border-radius: 5px;
+}
+
+.ui-inputswitch {
+	height: 100%;
+	border: 1px solid #BCBCBC !important;
+}
+
+.ui-inputswitch-on {
+	width: 50px !important;
+	background: #FFCC00 !important;
+	height: 100% !important;
+	padding-top: 8px !important;
+}
+
+.ui-inputswitch-off {
+	width: 50px !important;
+	background-color: #999999 !important;
+	height: 100% !important;
+	background-color: #999999 !important;
+	padding-top: 8px !important;
+}
+
+.ui-inputswitch-handle {
+	height: 100% !important;
+}
+
+.choose-file-button .ui-state-default {
+	margin-top: -5px !important;
+}
+
+/*********Foter CSS *******************/
+.nr-footer {
+	/** background:#F2F2F2; */
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+/*****************base template***************************************/
+.lfloat {
+	float: left;
+}
+
+.rfloat {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.top-navigation {
+	width: 100%;
+	height: 60px;
+	background-color: #FFCC00;
+}
+
+.logo_div {
+	width: 196px;
+	height: 60px;
+	float: left;
+}
+
+.dhl_logo {
+	width: 196;
+	height: 60px !important;
+}
+
+.align-right {
+	float: right;
+	height: 60px;
+	text-align: right;
+	margin-right: 15px;
+}
+
+.top-nav-right-content {
+	margin-top: 20px;
+	font-family: Open Sans;
+	font-size: 13px;
+}
+
+.logout-text {
+	color: #000000;
+	font-weight: bold;
+}
+
+.left-navigation {
+	clear: both;
+	width: 20%;
+	height: 100%;
+	background-color: #35383D;
+}
+
+.left-navigation-item {
+	color: #CCC;
+	font-size: 16px !important;
+	font-weight: normal;
+	text-decoration: none;
+	margin-left: 10px;
+	height: 50px;
+	display: block;
+}
+
+/* .left-navigation-text {
+	margin-top: 5px;
+	width: 80%;
+	float: right;
+}
+
+.left-navigation-image {
+	width: 33px;
+	height: 27px;
+} */
+
+/* #menu-items ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#menu-items ul li {
+	margin: 15px 0px 0px 0px;
+	padding: 0;
+	list-style-type: none;
+	height: 50px;
+}
+
+li.selected a {
+	background-color: red;
+} */
+.nr-middle-content {
+	height: auto !important;
+}
+/* .link-without-decoration{
+	text-decoration: none;
+} */
+
+/***********dialog start************/
+.ui-dialog {
+	border: 1px solid #E4E4E4;
+	border-radius: 5px;
+}
+/*RTC-136961 Infosys ---Fix for IE Start*/
+.ui-dialog .ui-dialog-titlebar {
+	background:#FFFFFF;
+}
+
+/*RTC-136961 Infosys---Fix for IE  End*/
+.ui-dialog-titlebar {
+	background-color: #FFFFFF;
+}
+
+.custom-dialog-hide-titlebar .ui-dialog-titlebar {
+	display: none;
+}
+
+.custom-dialog-hide-titlebar .ui-dialog-titlebar-icon {
+	display: none;
+}
+
+/***********dialog ends************/
+.outputLable {
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12px !important;
+	color: #333 !important;
+}
+
+/************** data table css ***************/
+.table-border .ui-datatable-tablewrapper {
+	overflow: auto;
+	border: 1px solid #E4E4E4;
+	border-radius: 5px;
+	width: 100%;
+	text-align: left !important;
+}
+
+.table-border .ui-datatable-odd:hover, .ui-datatable-even:hover {
+	background: #eef9f9 !important;
+}
+
+.table-border .ui-paginator-page {
+	padding: 4px 7px !important;
+	background: none;
+	border: 1px solid #D7D7D7;
+	font-family: 'Arial Regular', 'Arial';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px;
+}
+
+.table-border .ui-state-active {
+	background: #F2F2F2 !important;
+	font-weight: bold;
+}
+
+.table-border .ui-sortable-column.ui-state-active {
+	border-bottom: 2px solid #D40511 !important;
+}
+
+.table-border .ui-sortable-column {
+	background: transparent !important;
+	/* border-bottom: 2px solid #D40511 !important; */
+}
+
+.ui-datatable-odd {
+	background: none !important;
+}
+
+.ui-datatable-even {
+	background: none !important;
+}
+
+.ui-paginator-top {
+	border-bottom: 0px none;
+	height: 50px;
+}
+
+.ui-paginator-bottom {
+	display: none;
+}
+
+th.custom-th {
+	font-family: 'Delivery Cd Light';
+	font-weight: 300 !important;
+	font-style: normal;
+	font-size: 14px !important;
+	color: #666666;
+	line-height: 16px;
+	text-transform: uppercase;
+	background: none !important;
+	vertical-align: top !important;
+}
+
+td.custom-td {
+	/* font-weight: normal !important;
+	font-size: 13px;
+	color: #333333; */
+	font-family: 'Arial Regular', 'Arial';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px;
+	color: #333333;
+	line-height: 20px;
+	vertical-align: top !important;
+}
+
+td.custom-label label {
+	font-family: 'Arial Regular', 'Arial' !important;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px !important;
+	color: #333333;
+	line-height: normal;
+}
+
+/* td.nobold{
+	font-size: 13px !important;
+} */
+.table-border .ui-paginator-current {
+	float: left;
+	margin: 0px !important;
+	padding: 15px 0px !important;
+	font-family: 'Arial Bold', 'Arial';
+	font-weight: 700 !important;
+	font-style: normal;
+	font-size: 13px !important;
+	color: #333333;
+}
+
+/* .table-border .ui-paginator-first .ui-paginator-last .ui-paginator-prev .ui-paginator-next {
+  background: transparent;
+  border: 1px solid;
+} */
+.table-border .ui-paginator-first, .table-border .ui-paginator-last,
+	.table-border .ui-paginator-prev, .table-border .ui-paginator-next {
+	padding: 4px 3px !important;
+	background: transparent;
+	border: 1px solid #D7D7D7 !important;
+	font-family: 'Arial Regular', 'Arial';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px;
+}
+
+.table-border .ui-paginator-rpp-options {
+	padding: 3px !important;
+	border: 1px solid #D7D7D7;
+	background: transparent none repeat scroll 0% 0%;
+	float: right;
+	margin-top: 8px;
+	border-radius: 5px;
+}
+
+.blueColor a {
+	font-family: 'Arial Bold', 'Arial' !important;
+	font-weight: 700;
+	font-style: normal;
+	color: #0099CC;
+	text-align: left;
+	font-size: 13px !important;
+}
+
+.blueColor-2 a {
+	font-family: 'Arial Bold', 'Arial' !important;
+	font-weight: 400;
+	font-style: normal;
+	color: #0066CC;
+	text-align: left;
+	font-size: 13px !important;
+}
+
+.custom-th .ui-icon-triangle-1-n {
+	height: 16px;
+	width: 16px;
+	margin-left: 4px !important;
+	background-position: 0px !important;
+}
+
+.custom-th .ui-icon-triangle-1-s {
+	height: 16px;
+	width: 16px;
+	margin-left: 4px !important;
+	background-position: 0px !important;
+}
+
+.custom-th .ui-icon-carat-2-n-s {
+	background-position: 38px 0;
+}
+
+.right-align .ui-column-title {
+	float: right;
+}
+
+.datatable-70-width  table {
+	width: 70% !important;
+}
+
+.datatable-97-width table {
+	width: 97% !important;
+}
+
+.datatable-95-width table {
+	width: 95% !important;
+}
+
+.datatable-15-margin-left table {
+	margin-left: 15px;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight,
+	.ui-widget-header .ui-state-highlight {
+	background: #DAD9D4 !important;
+	border: 1px #fff;
+}
+
+.ui-datatable-tablewrapper .ui-widget-content .ui-state-highlight {
+	border: 1px solid #fff !important;
+}
+
+/* .sorted-col-background{
+	background:#FCFCFC;
+	z-index:-1;
+} */
+
+/***data table css */
+/*************shipment details*************/
+.shipmentDetails tr td {
+	width: 33.33%;
+}
+
+.shipmentDetails td {
+	padding-left: 5px !important;
+}
+
+.textField-height {
+	height: 30px;
+}
+
+/***/
+.text-capitals {
+	text-transform: uppercase;
+}
+
+/** for mandatory field icon left **/
+.mandatoryField .ui-outputlabel-rfi {
+	color: #CC0000;
+	float: left;
+	margin-left: -7px !important;
+}
+
+.messageLayout {
+	widht: 90%;
+}
+
+/** to remove input field background color for autofill. **/
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+.boldText {
+	font-weight: bold;
+}
+
+/** view shipment css to remove spaces **/
+.smallLabel td {
+	padding: 0px !important;
+}
+
+/**** Order Details **********/
+.order-details-header .ui-panelgrid-cell {
+	padding-left: 0px !important;
+}
+
+.warning-image {
+	width: 16px;
+	height: 14px;
+	margin-top: -4px;
+}
+
+.warnin-area {
+	display: block;
+	height: 33px;
+	border: 1px solid #F7E3A4;
+	border-radius: 6px;
+	margin: 12px 3px;
+}
+
+.warning-text {
+	font-family: 'Arial Bold', 'Arial' !important;
+	font-weight: 700;
+	font-style: normal;
+	color: #F8A407;
+	text-align: left;
+	font-size: 13px !important;
+	line-height: normal;
+}
+/* 
+.statusupdatelabel {
+	font-weight: 700;
+	font-style: normal;
+	font-size: 17px;
+} */
+.order-details-address .ui-widget-header {
+	font-weight: 500;
+	font-style: normal;
+	font-size: 20px !important;
+	color: #666666;
+	text-align: left !important;
+	line-height: normal;
+	background: none !important;
+	padding-left: 0px !important;
+}
+
+.filelayout {
+	padding-right: 2%;
+}
+
+.hrborder {
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+.hrborder1 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.leftalign {
+	text-align: left;
+	padding-right: 60px;
+}
+
+.rightalign {
+	text-align: right;
+}
+
+.address-panel .ui-panelgrid-cell {
+	padding: 0px !important;
+}
+
+/**********Order Details Ends *******/
+.order-shipment-details .ui-panel .ui-panel-titlebar {
+	float: left;
+	display: none;
+}
+/****************************************************************************************/
+/************ Search Panel css starts ********/
+.search-area {
+	background: #FCFCFC;
+	width: 85%;
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+	min-height: 90px;
+}
+
+.search-area-orders {
+	background: #FCFCFC;
+	width: 95%;
+	float: left;
+}
+
+.search-panel {
+	margin: 15px;
+	width: 98%;
+}
+
+.search-panel .ui-panelgrid-cell {
+	padding: 0px !important;
+}
+
+.search-panel-pu {
+	margin: 15px;
+	width: 300px;
+}
+
+.search-panel-pu .ui-panelgrid-cell {
+	padding: 0px !important;
+}
+
+.custom-search-field input {
+	font-family: 'Arial Regular', 'Arial' !important;
+	font-size: 13px !important;
+	background-color: #FFFFFF !important;
+	color: #000 !important;
+	border-radius: 5px;
+	width: 100%;
+	height: 30px;
+	padding-left: 7px;
+	font-weight: 400 !important;
+	font-style: normal;
+}
+
+.search-label {
+	font-family: 'Arial Regular', 'Arial' !important;
+	font-weight: 400 !important;
+	font-style: normal;
+	font-size: 13px !important;
+}
+
+.search-link {
+	font-family: 'Arial Regular', 'Arial' !important;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px !important;
+	color: rgb(0, 102, 204) !important;
+}
+
+.search-criteria-panel {
+	width: 100%;
+	margin-top: 10px;
+	display: none;
+}
+
+.search-criteria-panel .ui-panelgrid-cell:FIRST-CHILD {
+	padding-left: 0px !important;
+}
+
+.search-criteria-panel .ui-panelgrid-cell {
+	padding-left: 20px !important;
+}
+/********* Search Panel css ends ********/
+
+
+/************ Drop Down Starts **********/
+.ui-selectonemenu .ui-selectonemenu-label {
+	font-family: 'Arial Bold', 'Arial' !important;
+	font-size: 13px;
+	background: #FFFFFF;
+	padding: 5px;
+	display: block;
+	font-weight: 400 !important;
+	border: 1px solid #BCBCBC !important;
+	border-radius: 5px;
+	heigth: 30px;
+	color: #000000;
+}
+
+.ui-selectonemenu .ui-selectonemenu-trigger .ui-icon {
+	margin-top: 0px;
+	position:relative;
+}
+
+.ui-selectonemenu .ui-selectonemenu-trigger {
+	border: 1px none;
+	cursor: pointer;
+	height: 100%;
+	padding: 8px 3px !important;
+	right: 0;
+	top: 0;
+	width: 24px !important;
+	border-top: 1px solid #BCBCBC !important;
+	border-right: 1px solid #BCBCBC !important;
+	border-bottom: 1px solid #BCBCBC !important;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+
+.ui-selectonemenu-panel .ui-selectonemenu-list {
+	background: #fff;
+	border: 0 none;
+}
+
+.ui-selectonemenu-panel .ui-selectonemenu-list-item {
+	font-family: 'Arial Bold', 'Arial' !important;
+	font-size: 13px;
+	color: #000 !important;
+	border: 0px none;
+	margin: 1px 0;
+	padding: 3px 5px;
+	text-align: left;
+	white-space: nowrap;
+}
+
+.custom-dropdown .ui-icon {
+	margin-top: -2px !important;
+	margin-left: 2px !important;
+	border-radius: 0px;
+	height: 16px;
+	width: 13px;
+}
+
+.custom-dropdown .ui-icon-triangle-1-s {
+	background-position: 0px;
+}
+
+/*************Drop Down Ends**************/
+
+/********** Button Panel Starts ************/
+.ui-button .ui-button-text {
+	text-align: center;
+}
+
+.btn-panel {
+	width: 100%;
+	height: 50px;
+	text-align: left;
+	margin-bottom: 7px;
+	margin-top: 10px;
+}
+
+.btn-red {
+	font-family: 'Arial Bold', 'Arial' !important;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 13px !important;
+	color: #FFFFFF !important;
+	background-color: #D40511 !important;
+	text-align: center;
+	height: 37px;
+}
+
+.btn-red-track {
+	font-family: 'Arial Bold', 'Arial' !important;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 16px !important;
+	color: #FFFFFF !important;
+	background-color: #D40511 !important;
+	text-align: center;
+	height: 37px;
+}
+
+.btn-red:HOVER {
+	background-color: #9D0415 !important;
+}
+
+.btn-grey {
+	font-family: 'Arial Regular', 'Arial' !important;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 13px !important;
+	color: #333333 !important;
+	background-color: #F1F1F1 !important;
+	text-align: center;
+	height: 37px;
+}
+
+.btn-grey-disable {
+	font-family: 'Arial Regular', 'Arial' !important;
+	font-weight: 700 !important;;
+	font-style: normal !important;;
+	font-size: 13px !important;
+	color: #333333 !important;
+	background-color: #F1F1F1 !important;
+	text-align: center !important;;
+	height: 37px !important;;
+}
+
+.btn-grey-disable:HOVER {
+	background-color: #F1F1F1 !important;
+}
+
+.btn-grey:HOVER {
+	background-color: #DBDBDB !important;
+}
+
+/********** Button Panel Ends *************/
+
+/****************Tab css starts ********************/
+.ui-tabs {
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+.custom-tab .ui-panel-content {
+	padding: 0px !important;
+}
+
+.custom-tab .ui-tabs-nav li {
+	font-family: 'Arial Bold', 'Arial';
+	font-weight: 700;
+	font-style: normal;
+	font-size: 13px;
+	color: #333333 !important;
+	text-align: center;
+	line-height: normal;
+	background: transparent !important;
+	height: 30px !important;
+	border: 0px !important;
+}
+
+.custom-tab .ui-tabs-nav .ui-tabs-selected {
+	background-color: #FFFFFF !important;
+	border-color: #E4E4E4 !important;
+}
+
+/* .custom-tab .ui-tabs-nav .ui-tabs-selected a {
+	color: #333333 !important;
+} */
+.custom-tab .ui-tabs .ui-tabs-nav li:FIRST-CHILD {
+	margin-left: 10px;
+}
+
+.custom-tab .ui-state-default a:link {
+	color: #333333 !important;
+}
+
+.custom-tab .ui-tabs .ui-tabs-nav {
+	background: #F2F2F2 !important;
+	border-bottom: 0px !important;
+}
+
+.custom-tab .ui-tabs .ui-tabs-panel {
+	padding: 0px !important
+}
+
+.custom-tab-font-size a {
+	font-size: 13px !important;
+}
+
+/*** Custom panel 2 ***/
+.custom-tab-2 .ui-tabs-panel {
+	padding: 0px !important
+}
+
+.custom-tab-2 .ui-tabs-nav li {
+	font-family: 'Arial Bold', 'Arial';
+	font-weight: 700;
+	font-style: normal;
+	font-size: 14px;
+	color: #333333 !important;
+	border-color: #999999;
+	background-color: #B5B4B4;
+	height: 40px;
+	margin-left: 20px !important;
+}
+
+.custom-tab-2 .ui-tabs-nav li a {
+	color: #FFFFFF;
+	text-shadow: 0 0 0;
+	padding-top: 8px !important;
+}
+
+.custom-tab-2 .ui-tabs-nav .ui-tabs-selected {
+	top: 2.5px !important;
+	background-color: #FFFFFF !important;
+}
+
+.custom-tab-2 .ui-tabs-nav .ui-tabs-selected a {
+	color: #CC0000;
+}
+
+.custom-tab-2 .ui-tabs .ui-tabs-nav {
+	background: none;
+	border-bottom: 1px solid #999999;
+}
+
+.custom-tab-2 li {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+/****************Tab css ends ********************/
+
+/************ Custom bread crumb *****************/
+.custom-bread-crum {
+	font-family: Arial;
+	font-size: 11px;
+	color: #666666;
+	font-weight: 400;
+	font-style: normal;
+}
+/************ Custom bread crumb ***************/
+
+/************ Labels Starts *************/
+.lable-gray-12-400 {
+	font-family: 'Arial Regular', 'Arial' !important;
+	font-size: 12px !important;
+	color: #868686 !important;
+	font-weight: 400;
+	font-style: normal;
+	line-height: normal;
+}
+
+.label-gray-17-500 {
+	font-family: 'Delivery' !important;
+	font-size: 17px !important;
+	color: #666666 !important;
+	font-weight: 500;
+	font-style: normal;
+	line-height: normal;
+}
+
+.label-gray-20-500 {
+	font-family: 'Delivery' !important;
+	font-size: 20px !important;
+	color: #666666 !important;
+	font-weight: 500;
+	font-style: normal;
+	line-height: normal;
+}
+
+.label-gray-13-700 {
+	font-family: 'Arial Bold', 'Arial' !important;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 13px !important;
+	color: #868686;
+	text-align: left;
+	line-height: normal;
+}
+
+.label-black-17-700 {
+	font-family: 'Arial Bold', 'Arial' !important;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 17px !important;
+	color: #333333;
+	text-align: left;
+	line-height: normal;
+}
+
+.label-black-13-700 {
+	font-family: 'Arial Bold', 'Arial' !important;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 13px !important;
+	color: #333333;
+	text-align: left;
+	line-height: normal;
+}
+
+.label-black-13-400 {
+	font-family: 'Arial Bold', 'Arial' !important;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px !important;
+	color: #333333;
+	text-align: left;
+	line-height: normal;
+}
+
+.label-black-10 {
+	font-family: 'Arial', 'Arial' !important;
+	font-style: normal;
+	font-size: 10px !important;
+	color: #333333;
+	text-align: left;
+	line-height: normal;
+}
+
+//
+Added by Narendra
+
+.label-black-13-401-effm {
+	line-height: 5px !important;
+}
+
+.ui-selectmanycheckbox label, .ui-selectoneradio label {
+	margin-top: -7px !important;
+}
+
+.ui-selectmanycheckbox label {
+	margin-bottom: 0px !important;
+}
+
+.label-black-13-400-AccType {
+	font-family: 'Arial Bold', 'Arial' !important;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px !important;
+	color: #333333;
+	text-align: left;
+	height: 38px !important;
+	vertical-align: top !important;
+}
+
+.warning-lable {
+	font-family: 'Arial Bold', 'Arial' !important;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 17px !important;
+	color: #F8A407;
+	text-align: left;
+	line-height: normal;
+}
+
+.label-green-17-700 {
+	font-family: 'Arial Bold', 'Arial' !important;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 17px !important;
+	color: #339900;
+	text-align: left;
+	line-height: normal;
+}
+/************ Labels Ends ************/
+
+/*********** Panel with zero padding ********/
+/*** 20151229 - INFOSYS - Browser Compatibility fix - Remove !important **/
+.custom-panel-with-top-paadding .ui-panelgrid-cell {
+	padding: 0px;
+	padding-top: 13px;
+}
+
+.custom-panel-with-no-paadding .ui-panelgrid-cell {
+	padding: 0px;
+}
+
+.custom-panel-with-row-padding tr {
+	margin-top: 5px;
+}
+/******************************************/
+
+/********** Custom input fields starts *************/
+.ui-inputfield {
+	height: 30px;
+	color: #000000 !important;
+	font-family: "Arial Regular", "Arial" !important;
+	font-weight: 400 !important;
+	font-style: normal;
+	font-size: 13px !important;
+	background-color: #FFFFFF !important;
+	border-radius: 5px;
+	padding-left: 5px !important;
+	border: 1px solid #BCBCBC !important;
+}
+
+.custom-input-field-area {
+	font-family: "Arial Regular", "Arial" !important;
+	font-weight: 400 !important;
+	font-style: normal;
+	font-size: 13px !important;
+	background-color: #FFFFFF !important;
+	height: 90px !important;
+	color: #000000 !important;
+	border-radius: 5px;
+	padding-left: 5px !important;
+	border: 1px solid #BCBCBC !important;
+}
+
+/****** for disabled ************/
+.custom-disabled-field .ui-state-disabled {
+	background: #f5f5f5 !important;
+}
+/********** Custom input fields ends****************/
+
+/********** Custom radio btn *******************/
+.custom-radio-btn {
+	margin-left: -8px;
+}
+
+.custom-radio-btn label {
+	font-family: "Arial Regular", "Arial" !important;
+	font-weight: 400 !important;
+	font-style: normal;
+	font-size: 13px !important;
+	color: #333;
+}
+
+.custom-radio-btn-vertical label {
+	font-family: "Arial Regular", "Arial" !important;
+	font-weight: 400 !important;
+	font-style: normal;
+	font-size: 13px !important;
+	color: #333333;
+	margin-top: 0px !important;
+}
+
+.custom-radio-btn-vertical td {
+	padding: 0px;
+}
+
+.custom-radio-btn-vertical .ui-radiobutton-icon {
+	margin-left: 0px;
+}
+
+/**********************************************/
+/******** Tool Tip ************/
+.ui-tooltip {
+	background-color: #FFFFFF;
+	border-radius: 0px;
+}
+
+.ui-tooltip-mine {
+	left: 565px !important;
+	top: top-30 !important;
+	margin-top: -120px !important;
+	border: 1px solid red;
+
+	/* left:77% !important; */
+}
+/*********************/
+/********** Custom radio btn *******************/
+.custom-radio-btn label {
+	font-family: "Arial Regular", "Arial" !important;
+	font-weight: 400 !important;
+	font-style: normal;
+	font-size: 13px !important;
+}
+/**********************************************/
+.half-width table {
+	width: 50% !important;
+}
+
+
+.custom-dropdown .ui-icon {
+	margin-top: -2px !important;
+	margin-left: 2px !important;
+	border-radius: 0px;
+	height: 16px;
+	width: 13px;
+}
+
+.custom-dropdown .ui-icon-triangle-1-s {
+	background-position: 0px;
+}
+
+
+.label-blue-13-400 {
+	float: right;
+	font-family: 'Arial Bold', 'Arial' !important;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px !important;
+	color: #0066CC !important;
+	line-height: normal;
+}
+
+.label-blue-14-700 {
+	font-family: 'Arial Bold', 'Arial' !important;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 14px !important;
+	color: #0066CC;
+	line-height: normal;
+}
+
+.ui-default-account-text {
+	float: right;
+	font-weight: normal;
+}
+/**** Accordion - End *****/
+.accountDetails tr td {
+	width: 33.33% !important;
+}
+
+.align-columns-top > tbody > tr > td {
+	vertical-align: top;	
+}
+
+.accountDetailTabView {
+	border: none !important;
+}
+
+.accountDetailTabView ul {
+	background-color: white !important;
+}
+
+.accountDetailTabView li {
+	border-color: #E4E4E4 !important;
+	margin-right: 20px !important;
+}
+
+.accountDetailTabView a {
+	width: 200px;
+	text-align: center;
+	height: 30px;
+}
+
+.accountDetailWidth div {
+	width: 98% !important;
+}
+
+
+/* Add by Narendra cusor to chceck box for requirement defect in 2.4 */
+.ui-chkbox{
+	cursor: pointer!important;
+}
+
+/* pick list css end */
+.no-hover h3:HOVER {
+	background: none !important;
+}
+
+.no-margin {
+	margin: 0px;
+}
+
+.table-no-padding td {
+	padding: 0px !important;
+}
+
+/* custom check box */
+.custom-checkbox .ui-chkbox-box {
+	margin-top: 5px;
+}
+
+.custom-checkbox .ui-chkbox-label {
+	margin: 0 0 0 5px;
+}
+
+/*************************************************/
+/*file upload*/
+.ui-fileupload-buttonbar {
+	/* padding: 0.2em 0.4em; */
+	background: none;
+}
+
+.ui-selectmanycheckbox {
+	padding: 5px;
+	font-weight: none;
+}
+
+.ui-selectoneradio label {
+	margin-bottom: 10px;
+	font-weight: normal;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 10px;
+}
+
+.ui-selectmanycheckbox label {
+	margin-bottom: 10px;
+	font-weight: normal;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.ui-slider {
+	border-radius: 8px;
+	box-shadow: 0 2px 5px #8f8f8f inset;
+}
+
+.ui-slider .ui-slider-handle {
+	background-color: #A9A9A9;
+	border: none !important;
+}
+
+.ui-icon-bullet {
+	background-position: -80px -144px;
+}
+
+.ui-icon-plusthick {
+	background-position: 0px 42px;
+}
+
+.ui-fileupload-choose {
+	font-family: 'Arial Regular', 'Arial' !important;
+	font-weight: 500;
+	font-style: normal;
+	position: relative;
+	overflow: hidden;
+	color: #333333 !important;
+	background-color: #F1F1F1 !important;
+	border-radius: 5px;
+	height: 32px;
+	width: 100px;
+}
+
+.customEditableCol .ui-cell-editor-input div {
+	background-color: transparent !important;
+	border-color: transparent !important;
+}
+
+/*************************************************/
+/*Market Place Registration*/
+.mp_pagesubheader {
+	text-align: left;
+	line-height: normal;
+	font-weight: 500;
+	font-family: "Delivery";
+	color: #333;
+	font-size: 20px;
+	font-style: normal;
+	border-bottom: 1px solid #E4E4E4;
+}
+
+.mp_pagesubheader-noborder {
+	text-align: left;
+	line-height: normal;
+	font-weight: 500;
+	font-family: "Delivery";
+	color: #333;
+	font-size: 20px;
+	font-style: normal;
+}
+
+.mp_chnls_header {
+	font-family: "Delivery";
+	font-weight: 500;
+	font-style: normal;
+	font-size: 17px;
+	color: #666;
+	text-align: left;
+	line-height: normal;
+}
+
+.mp_chnls_header {
+	font-family: "Delivery";
+	font-weight: 500;
+	font-style: normal;
+	font-size: 17px;
+	color: #666;
+	text-align: left;
+	line-height: normal;
+}
+
+.mp_chnls_header_panel {
+	height: 35px;
+	border-top: none !important;
+	border-left: none !important;
+	border-right: none !important;
+	border-bottom: 2px solid #E4E4E4 !important;;
+}
+
+.mp_chnls_header_panel_add_another {
+	font-family: "Arial Bold", "Arial" !important;
+	font-weight: 700 !important;
+	font-style: normal !important;
+	color: #06C !important;
+	/*text-decoration: underline !important;*/
+}
+
+/*START - 2.2 RELEASE - INFOSYS - CSS for Getting Started and FAQS*/
+.get-started-links {
+	margin-top: 15px;
+	/*margin-left: 250px;*/
+}
+
+.getStartedItem:hover {
+	background-color: #EFF0F0;
+}
+
+.get-started-links a {
+	text-decoration: underline;
+}
+
+.label-black-13-401 {
+	font-family: 'Helvetica Neue', 'Arial Bold', 'Arial' !important;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px !important;
+	color: #808080;
+	text-align: left;
+	line-height: normal;
+}
+
+.label-black-13-402 {
+	font-family: 'Helvetica Neue', 'Arial Bold', 'Arial' !important;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12px !important;
+	color: #400040;
+	text-align: left;
+	line-height: normal;
+}
+
+.text-capitals {
+	text-transform: uppercase;
+}
+
+.pageHeader1 {
+	font-size: 32px;
+	color: #31353B;
+	margin: 0px;
+	font-weight: 500;
+}
+
+/*END - 2.2 RELEASE - INFOSYS - CSS for Getting Started and FAQS*/
+
+/* .textLink {
+	font-family: "Arial Bold","Arial";
+	font-weight: 700;
+	color: #06C;
+	text-decoration: underline;
+} */
+.textLink-bold {
+	font-family: "Arial Bold", "Arial" !important;
+	font-weight: 700 !important;
+	color: #06C !important;
+	font-style: normal !important;
+	font-size: 13px !important;
+}
+
+.textLink-bold-disabled {
+	font-family: "Arial Bold", "Arial" !important;
+	font-weight: 700 !important;
+	color: #A19E9E !important;
+	font-style: normal !important;
+	font-size: 13px !important;
+	cursor: default;
+}
+
+.textLink-bold:hover {
+	text-decoration: underline !important;
+}
+
+.textLink {
+	font-family: "Arial" !important;
+	font-weight: 400 !important;
+	color: #06C !important;
+	font-style: normal !important;
+	font-size: 13px !important;
+}
+
+.textLink:hover {
+	text-decoration: underline !important;
+}
+
+.texttooltip {
+	font-family: "Arial" !important;
+	font-weight: 400 !important;
+	color: #000000 !important;
+	font-style: normal !important;
+	font-size: 13px !important;
+}
+/* 	*/
+
+/* START - Custom Tool tip 2.2 RELEASE  - SURESH R*/
+div.tooltips {
+	position: relative;
+	display: inline;
+}
+
+div.tooltips span {
+	/* position: absolute;
+  width:164px;
+  color: #333333;
+  background: #fff;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  visibility: hidden;
+  border:1px solid  #ccc;
+  box-shadow: 10px 10px 5px #666666;
+  box-shadow: inset 0px 0px 5px 1px rgba(21,139,204,1);*/
+	position: absolute;
+	visibility: hidden;
+	width: 200px;
+	height: 57px;
+	padding: 20px;
+	border-radius: 0px;
+	background: #ffffff;
+	border: 1px solid #ccc;
+	box-shadow: 6px 6px 7px #ccc;
+}
+
+div.tooltips span:after {
+	/* content: '';
+  position: absolute;
+  top: 102%;
+  left: 15%;
+  margin-left: -8px;
+  width: 0; height: 0;
+  border-top: 8px solid #ccc;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;*/
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 82%;
+	left: 10%;
+	background: inherit;
+	transform: rotate(45deg);
+	box-shadow: inset -5px -5px 5px -4px #ccc;
+	box-shadow: 5px 5px 7px #ccc;
+}
+/* div:hover.tooltips span {
+  visibility: visible;
+  opacity: 0.8;
+  bottom: 30px;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: 50px;
+  z-index: 999;
+} */
+.tooltips-show:hover .tooltips span {
+	visibility: visible;
+	bottom: 45px;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: 25px;
+	z-index: 999;
+}
+
+.rowhiglignt:hover {
+	background: #eef9f9 !important;
+	visibility: visible;
+	bottom: 45px;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: 25px;
+	z-index: 999;
+}
+
+/* END - Custom Tool tip 2.2 RELEASE  - SURESH R*/
+.faq-header {
+	font-family: "Delivery" !important;
+	font-weight: 500 !important;
+	font-style: normal !important;;
+	font-size: 17px !important;
+	color: #666 !important;
+	text-align: left !important;
+	line-height: normal !important;
+}
+
+.dialog-text {
+	font-family: "Arial Regular", "Arial" !important;
+	font-weight: 400 !important;
+	font-style: normal !important;
+	font-size: 13px !important;
+	color: #333 !important;
+	text-align: left !important;
+	line-height: normal !important;
+}
+
+.ui-panel-mp {
+	border: 2px solid #D9D9D9 !important;
+	padding: 0px !important;
+	border-radius: 5px;
+	margin: 0px;
+}
+
+.ui-panel-mp:hover {
+	border: 2px solid #60cfd5 !important;
+	padding: 0px !important;
+	border-radius: 5px;
+	margin: 0px;
+}
+
+.mandatoryLabel {
+	font-family: "Arial Bold", "Arial";
+	font-weight: 700;
+	font-style: normal;
+	font-size: 18px;
+	color: #C00;
+}
+
+.ax_h1 {
+	font-family: "Delivery";
+	font-weight: 500;
+	font-style: normal;
+	font-size: 20px;
+	color: #333;
+	text-align: left;
+	line-height: normal;
+}
+
+.ui-scrollpanel-drag {
+	border-radius: 8px;
+}
+
+/* 20160107 - START - INFOSYS - New CSS class for product module */
+.prod-attribute-body {
+	clear: both !important;
+	color: rgb(102, 102, 102) !important;
+	display: block !important;
+	font-family: Delivery !important;
+	font-size: 14px !important;
+	height: auto !important;
+	line-height: 20px !important;
+	margin-bottom: 0px !important;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	margin-top: 0pxl !important;
+	padding-bottom: 0px !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	padding-top: 0px !important;
+	width: 360px !important"
+}
+/* 20160107 - END- INFOSYS - New CSS class for product module */
+
+/**/
+.sku-search-area {
+	background: #FCFCFC;
+	width: 60%;
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+	min-height: 80px;
+}
+/**/
+
+/* 20160107 - END- INFOSYS - New CSS class for product module */
+
+/*Request Pickup datatable css*/
+.pickupDetails tr td {
+	width: 33.33%;
+}
+
+.pickupDetails td {
+	padding-left: 5px !important;
+}
+
+/* Added by SANTOSH 20160325 */
+.ui-fileupload-simple input[type="file"] {
+	max-height: 30px;
+	/* max-width: 30px; */
+}
+
+.label-black-11-400 {
+    font-family: 'Arial Bold', 'Arial' !important;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 11px !important;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+}
+/*Primefaces Upgrade Issue - Start*/
+.ui-selectonemenu  {
+	padding-right:2px !important;
+}
+/*Primefaces Upgrade Issue - End*/
+/*Primefaces Upgrade Customization Issue - Start*/
+.ui-accordion-tab .ui-accordion-header {
+	background: none;
+	border-radius: 5px !important;
+	margin-bottom: 20px !important;
+	border-color: #E4E4E4 !important;
+	color: #0066CC !important;
+	height: 40px;
+	padding-top: 10px !important;
+}
+
+.accordionLabel .ui-accordion-header .label-blue-14-700 {
+	margin-left:55px !important;
+}
+/*Primefaces Upgrade Customization Issue - End*/
+
+/* RTC 241143: Placeholder is too dark in IE browser - START */
+/* - Internet Explorer 10–11
+   - Internet Explorer Mobile 10-11 */
+:-ms-input-placeholder {
+    color: #888 !important;
+}
+
+/* Edge (also supports ::-webkit-input-placeholder) */
+::-ms-input-placeholder {
+    color: #88;
+}
+/* RTC 241143: Placeholder is too dark in IE browser - END */
+.dhlLogo {
+	margin:22px 0 0 30px;
+	max-width:130px;
+}
+/* Tooltip style start */
+.ui-tooltip .ui-tooltip-text {
+	
+	padding: 5px 10px;
+    background-color: #FAF5E7;
+    color: #4c4c4c;
+	
+}
+
+.ui-tooltip-arrow {
+	border-style:none;
+}
+
+.ui-tooltip.ui-tooltip-right, .ui-tooltip.ui-tooltip-left {
+	padding: 0px;
+}
+
+.custom-tooltip {
+	text-align:left !important;
+	font-size:13px !important;
+	width:200px !important;
+	border: 1px solid rgb(228, 228, 228) !important;
+}
+/* Tooltip style end */
+
+/*[CY][294131]*/
+@media only screen and (max-width: 480px) {
+	.dhlLogo {margin: 22px 0 0 0px;}
+	.rfloat {
+		float: none;
+		padding: 0 !important;		
+	}
+	.nr-footer{
+		text-align:center;
+	}
+	.custom-panel-with-no-paadding .ui-panelgrid-cell{
+    vertical-align: middle;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	body{zoom:0.9;}
+}
+
+
+
+
