@@ -1,0 +1,395 @@
+/* DHL Color Scheme */
+:root {
+    --dhl-red: #D40511;
+    --dhl-yellow: #FFCC00;
+    --dhl-dark: #222222;
+    --dhl-light: #F5F5F5;
+    --dhl-blue: #005A9C;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: var(--dhl-dark);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.dhl-header {
+    background-color: var(--dhl-yellow);
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.dhl-logo {
+    height: 40px;
+}
+
+.language-selector {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.spinner {
+    border: 4px solid rgba(0,0,0,0.1);
+    border-radius: 50%;
+    border-top: 4px solid var(--dhl-red);
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Tracking Summary */
+.tracking-summary {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.tracking-number {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--dhl-dark);
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.status-delivered {
+    background-color: #E8F5E9;
+    color: #2E7D32;
+}
+
+.status-in-transit {
+    background-color: #E3F2FD;
+    color: var(--dhl-blue);
+}
+
+.shipment-overview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.origin-destination {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.location {
+    flex: 1;
+}
+
+.location-label {
+    font-weight: 600;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.location-value {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.location-arrow {
+    font-size: 24px;
+    color: var(--dhl-red);
+    padding: 0 10px;
+}
+
+.shipment-details {
+    flex: 1;
+    min-width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.detail {
+    margin-bottom: 10px;
+}
+
+.detail-label {
+    color: #666;
+    font-size: 14px;
+}
+
+.detail-value {
+    font-weight: 600;
+    display: block;
+}
+
+/* Tracking Map */
+.tracking-map {
+    position: relative;
+    margin: 30px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    height: 200px;
+}
+
+.tracking-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Timeline */
+.tracking-timeline {
+    margin: 40px 0;
+}
+
+.tracking-timeline h3 {
+    font-size: 18px;
+    color: var(--dhl-dark);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.timeline-container {
+    position: relative;
+    padding-left: 100px;
+}
+
+.timeline-event {
+    position: relative;
+    padding: 15px 0;
+    display: flex;
+}
+
+.timeline-event::before {
+    content: '';
+    position: absolute;
+    left: -40px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #eee;
+}
+
+.timeline-event:first-child::before {
+    top: 50%;
+}
+
+.timeline-event:last-child::before {
+    bottom: 50%;
+}
+
+.event-time {
+    width: 80px;
+    margin-left: -80px;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 13px;
+    color: #666;
+}
+
+.event-date {
+    font-weight: 600;
+}
+
+.event-hour {
+    margin-top: 3px;
+}
+
+.event-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin-right: 15px;
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.event-details {
+    flex: 1;
+}
+
+.event-status {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.event-location {
+    color: var(--dhl-blue);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.event-description {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* Event states */
+.past-event .event-dot {
+    background-color: var(--dhl-red);
+}
+
+.past-event::before {
+    background-color: var(--dhl-red);
+}
+
+.current-event .event-dot {
+    background-color: var(--dhl-yellow);
+    box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.3);
+}
+
+.future-event {
+    opacity: 0.6;
+}
+
+/* Help Section */
+.help-section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: var(--dhl-light);
+    border-radius: 8px;
+}
+
+.help-section h3 {
+    margin-bottom: 15px;
+    color: var(--dhl-dark);
+}
+
+.help-section ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.help-section li {
+    margin-bottom: 10px;
+}
+
+.help-section a {
+    color: var(--dhl-blue);
+    text-decoration: none;
+}
+
+.help-section a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.dhl-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--dhl-red);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.dhl-button:hover {
+    background-color: #b30000;
+}
+
+/* Error Message */
+.error-message {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.error-message h2 {
+    color: var(--dhl-red);
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.dhl-footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    color: #666;
+    font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .shipment-overview {
+        flex-direction: column;
+    }
+    
+    .origin-destination {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .location-arrow {
+        display: none;
+    }
+    
+    .timeline-container {
+        padding-left: 70px;
+    }
+    
+    .event-time {
+        width: 60px;
+        margin-left: -60px;
+    }
+}

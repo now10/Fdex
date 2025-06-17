@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHL Tracking Results</title>
+    <link rel="stylesheet" href="css/dhl-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="dhl-header">
+        <div class="container">
+            <img src="logo01.png" alt="DHL" class="dhl-logo">
+            <div class="language-selector">
+                <span id="currentLanguage"></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="trackingResults">
+            <!-- Content will be dynamically inserted by JavaScript -->
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Loading tracking information...</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="dhl-footer">
+        <div class="container">
+            <p><strong style="color: red;">DHL WORLD</strong> • World Wide Delivery •</p>
+            <strong style="color: red;"><a href="mailto:dhlworldwide@outlook.com" style=" color: red;">Contact</strong> Info., E-mail- dhlworldwide@outlook.com</a>
+            <p id="copyright"></p>
+        </div>
+    </footer>
+
+    <script src="js/language.js"></script>
+    <script src="js/tracking-data.js"></script>
+    <script src="js/script-results.js"></script>
+</body>
+</html>
